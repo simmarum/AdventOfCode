@@ -1,7 +1,3 @@
-import itertools
-from functools import reduce
-
-
 def read_file() -> list:
     with open(f"{__file__.rstrip('main.py')}input.txt", "r") as f:
         return [str(line) for line in f.readlines()]
