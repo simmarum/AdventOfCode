@@ -1,7 +1,3 @@
-from functools import reduce
-import re
-
-
 def read_file() -> list:
     with open(f"{__file__.rstrip('main.py')}input.txt", "r") as f:
         return [str(line).replace("\n", "") for line in f.read().splitlines()]
@@ -22,8 +18,6 @@ def part_1(inp):
 
 
 def part_2(inp):
-    # remove first and last 8 (+1 and -1)
-    all_ids = set(range(8*8, 119*8))
     found_ids = set()
     for s in inp:
         s = s.replace('B', '1').replace(
@@ -31,7 +25,8 @@ def part_2(inp):
         s_id = int(s[0:7], base=2) * 8 + int(s[7:11], base=2)
         found_ids.add(s_id)
 
-    my_ids = list(all_ids.difference(found_ids))
+    my_ids = list(
+        set(range(min(found_ids)-1, max(found_ids)+1)).difference(found_ids))
     my_ids.sort()
     return my_ids
 

@@ -10,8 +10,11 @@ def part_1(inp):
         x = val.split(" ")
         all_inst.append([x[0], int(x[1]), False])
     i = 0
+    ll = len(all_inst)
     while True:
-        if all_inst[i][2] == True:
+        if i >= ll:
+            return"Reach end input!"
+        if all_inst[i][2] is True:
             break
         if all_inst[i][0] == "nop":
             all_inst[i][2] = True
@@ -35,7 +38,7 @@ def part_2(inp):
         while True:
             if i >= ll:
                 return True, acc
-            if all_inst[i][2] == True:
+            if all_inst[i][2] is True:
                 return False, acc
             elif all_inst[i][0] == "nop":
                 all_inst[i][2] = True

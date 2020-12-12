@@ -16,7 +16,6 @@ def part_1(inp):
 
 
 def part_2(inp, prev_num):
-    inp_len = len(inp)
     i, j = 0, 0
     while True:
         t_s = sum(inp[i:j])

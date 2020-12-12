@@ -1,4 +1,4 @@
-from operator import add, mul
+from operator import add
 
 
 def read_file() -> list:

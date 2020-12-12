@@ -1,5 +1,4 @@
 import numpy as np
-from itertools import combinations_with_replacement
 
 
 def read_file() -> list:
@@ -15,8 +14,7 @@ def _magic_change(arr):
         s_arr = arr[max(0, x-1):x+2, max(0, y-1):y+2]
         unique, counts = np.unique(s_arr, return_counts=True)
         sub_data = dict(zip(unique, counts))
-        # print(sub_data)
-        if (value == 'L') and (sub_data.get('#') == None):
+        if (value == 'L') and (sub_data.get('#') is None):
             new_arr[x, y] = '#'
         if (value == '#') and (sub_data.get('#') >= 5):  # count itself
             new_arr[x, y] = 'L'

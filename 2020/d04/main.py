@@ -1,4 +1,3 @@
-from functools import reduce
 import re
 
 
@@ -11,7 +10,6 @@ def part_1(inp):
     good_pass = 0
     needed_field = set(['byr', 'iyr', 'eyr', 'hgt', 'hcl',
                         'ecl', 'pid'])  # cid optional
-    all_data = len(inp)
     for d in inp.split("\n\n"):
         tmp_data = set()
         d = d.replace("\n", " ")
@@ -51,7 +49,8 @@ def _check_pass(pass_dict):
         pass
     else:
         return False
-    if pass_dict['ecl'] not in ['amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth']:
+    if pass_dict['ecl'] not in [
+            'amb', 'blu', 'brn', 'gry', 'grn', 'hzl', 'oth']:
         return False
     p = re.compile(r'^[0-9]{9}$')
     m = p.match(pass_dict['pid'])
@@ -65,7 +64,6 @@ def _check_pass(pass_dict):
 
 def part_2(inp):
     good_pass = 0
-    all_data = len(inp)
     for d in inp.split("\n\n"):
         tmp_data = {}
         d = d.replace("\n", " ")
