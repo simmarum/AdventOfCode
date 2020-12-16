@@ -36,17 +36,6 @@ def part_2(inp):
             game_d[new_num] = deque([i], maxlen=2)
         last_num = new_num
     return last_num
-    # game = list(map(int, inp[0].split(",")[::-1]))
-    # lgame = len(game)
-    # for _ in range(lgame, 30000000):
-    #     last_num = game[0]
-    #     previous_turn = None
-    #     if last_num in game[1:]:
-    #         previous_turn = game.index(last_num, 1)
-    #         game.insert(0, previous_turn)
-    #     else:
-    #         game.insert(0, 0)
-    # return game[0]
 
 
 def main():
