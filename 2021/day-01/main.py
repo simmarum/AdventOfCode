@@ -7,12 +7,13 @@ def read_file() -> list:
 
 
 def part_1(inp):
-    return sum([1 if j-i > 0 else 0 for i, j in zip(inp[:-1], inp[1:])])
+    return sum([1 if j - i > 0 else 0 for i, j in zip(inp[:-1], inp[1:])])
 
 
 def part_2(inp):
     sliding_wind = [sum(x) for x in more_itertools.triplewise(inp)]
-    return sum([1 if j-i > 0 else 0 for i, j in zip(sliding_wind[:-1], sliding_wind[1:])])
+    return sum([1 if j - i > 0 else 0 for i,
+               j in zip(sliding_wind[:-1], sliding_wind[1:])])
 
 
 def main():

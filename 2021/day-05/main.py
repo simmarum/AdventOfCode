@@ -14,7 +14,7 @@ def part_1(inp):
         data.append(data_part)
     size = 1 + max(filter(lambda x: isinstance(
         x, (int)), chain.from_iterable(data)))
-    board = [0] * (size*size)
+    board = [0] * (size * size)
     for one_geo in data:
         x1 = one_geo[0]
         y1 = one_geo[1]
@@ -25,7 +25,7 @@ def part_1(inp):
             if y1 > y2:
                 y1, y2 = y2, y1
             for tmp_y in range(y1, y2 + 1):
-                board[x1*size+tmp_y] += 1
+                board[x1 * size + tmp_y] += 1
         elif (x1 != x2) and (y1 == y2):
             if x1 > x2:
                 x1, x2 = x2, x1
@@ -43,7 +43,7 @@ def part_2(inp):
         data.append(data_part)
     size = 1 + max(filter(lambda x: isinstance(
         x, (int)), chain.from_iterable(data)))
-    board = [0] * (size*size)
+    board = [0] * (size * size)
     for one_geo in data:
         x1 = one_geo[0]
         y1 = one_geo[1]
@@ -66,7 +66,7 @@ def part_2(inp):
             ys = ys * len(xs)
 
         for i in range(len(xs)):
-            board[xs[i]*size+ys[i]] += 1
+            board[xs[i] * size + ys[i]] += 1
 
     return sum([1 for x in board if x >= 2])
 

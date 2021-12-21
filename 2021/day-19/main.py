@@ -152,7 +152,8 @@ def part_1(inp):
 
 def part_2(scanners_pos):
     max_distance = 0
-    for (x1, y1, z1), (x2, y2, z2) in itertools.combinations(scanners_pos.values(), 2):
+    for (x1, y1, z1), (x2, y2, z2) in itertools.combinations(
+            scanners_pos.values(), 2):
         max_distance = max(max_distance, abs(x1 - x2) +
                            abs(y1 - y2) + abs(z1 - z2))
     return max_distance

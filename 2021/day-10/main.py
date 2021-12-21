@@ -69,7 +69,7 @@ def part_2(inp):
             missing_scores.append(line_score)
     missing_scores = sorted(missing_scores)
 
-    return missing_scores[int(len(missing_scores)/2)]
+    return missing_scores[int(len(missing_scores) / 2)]
 
 
 def main():

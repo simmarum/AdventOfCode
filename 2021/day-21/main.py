@@ -21,13 +21,15 @@ def part_1(inp):
         for player in players_pos.keys():
             rollout = []
             for _ in range(3):
-                dice = (dice+1) % 100
+                dice = (dice + 1) % 100
                 roll_cnt += 1
                 rollout.append(dice)
             players_pos[player] = (players_pos[player] + sum(rollout)) % 10
             players_points[player] += board[players_pos[player]]
             # print(
-            #     f"Player {player} rolls {rollout} and moves to space {board[players_pos[player]]} for a total points of {players_points[player]}.")
+            # f"Player {player} rolls {rollout} and moves to space
+            # {board[players_pos[player]]} for a total points of
+            # {players_points[player]}.")
             if players_points[player] >= end_points:
                 xx = list(players_points.keys())
                 xx.remove(player)
@@ -47,7 +49,7 @@ def play(players_pos, players_points, roll_cnt, board, end_points):
 
     p1_wins = 0
     p2_wins = 0
-    for dice in range(1, 1+3):
+    for dice in range(1, 1 + 3):
         player_id = (roll_cnt % 6) // 3
         new_pos = (players_pos[player_id] + dice) % 10
         if roll_cnt % 3 == 2:
