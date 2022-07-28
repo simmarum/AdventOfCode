@@ -10,15 +10,15 @@ def read_file() -> list:
 
 def _get_init_board(first_board, ss):
     lf = len(first_board)
-    lff = lf + 2*ss
+    lff = lf + 2 * ss
     board = np.zeros((lff, lff, lff))
-    cen = lff//2
+    cen = lff // 2
     fb = np.array([first_board])
-    x = cen-lf//2
+    x = cen - lf // 2
     if lf % 2 == 0:
-        y = cen+lf//2
+        y = cen + lf // 2
     else:
-        y = cen+lf//2+1
+        y = cen + lf // 2 + 1
 
     board[cen, x:y, x:y] = fb
     return board
@@ -29,9 +29,9 @@ def _one_turn(board):
     ind = np.argwhere(board == 1)
     for i, j, k in ind:
         s_board = board[
-            max(0, i-1):i+2,
-            max(0, j-1):j+2,
-            max(0, k-1):k+2
+            max(0, i - 1):i + 2,
+            max(0, j - 1):j + 2,
+            max(0, k - 1):k + 2
         ]
         neigh = np.count_nonzero(s_board)
         if neigh not in [3, 4]:
@@ -39,9 +39,9 @@ def _one_turn(board):
     ind_0 = np.argwhere(board == 0)
     for i, j, k in ind_0:
         s_board = board[
-            max(0, i-1):i+2,
-            max(0, j-1):j+2,
-            max(0, k-1):k+2
+            max(0, i - 1):i + 2,
+            max(0, j - 1):j + 2,
+            max(0, k - 1):k + 2
         ]
         neigh = np.count_nonzero(s_board)
         if (neigh == 3):
@@ -63,15 +63,15 @@ def part_1(inp):
 
 def _get_init_board_2(first_board, ss):
     lf = len(first_board)
-    lff = lf + 2*ss
+    lff = lf + 2 * ss
     board = np.zeros((lff, lff, lff, lff))
-    cen = lff//2
+    cen = lff // 2
     fb = np.array([first_board])
-    x = cen-lf//2
+    x = cen - lf // 2
     if lf % 2 == 0:
-        y = cen+lf//2
+        y = cen + lf // 2
     else:
-        y = cen+lf//2+1
+        y = cen + lf // 2 + 1
 
     board[cen, cen, x:y, x:y] = fb
     return board
@@ -82,10 +82,10 @@ def _one_turn_2(board):
     ind = np.argwhere(board == 1)
     for i, j, k, l in ind:
         s_board = board[
-            max(0, i-1):i+2,
-            max(0, j-1):j+2,
-            max(0, k-1):k+2,
-            max(0, l-1):l+2
+            max(0, i - 1):i + 2,
+            max(0, j - 1):j + 2,
+            max(0, k - 1):k + 2,
+            max(0, l - 1):l + 2
         ]
         neigh = np.count_nonzero(s_board)
         if neigh not in [3, 4]:
@@ -93,10 +93,10 @@ def _one_turn_2(board):
     ind_0 = np.argwhere(board == 0)
     for i, j, k, l in ind_0:
         s_board = board[
-            max(0, i-1):i+2,
-            max(0, j-1):j+2,
-            max(0, k-1):k+2,
-            max(0, l-1):l+2
+            max(0, i - 1):i + 2,
+            max(0, j - 1):j + 2,
+            max(0, k - 1):k + 2,
+            max(0, l - 1):l + 2
         ]
         neigh = np.count_nonzero(s_board)
         if (neigh == 3):

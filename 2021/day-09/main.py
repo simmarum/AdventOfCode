@@ -1,8 +1,8 @@
 
 def read_file() -> list:
     with open(f"{__file__.rstrip('main.py')}input.txt", "r") as f:
-        return [
-            [int(c) for c in str(line.replace("\n", ""))] for line in f.readlines()]
+        return [[int(c) for c in str(line.replace("\n", ""))]
+                for line in f.readlines()]
 
 
 def _get_pixel(inp, x, y, xx, yy):

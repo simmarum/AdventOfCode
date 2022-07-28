@@ -1,6 +1,7 @@
 def read_file() -> list:
     with open(f"{__file__.rstrip('main.py')}input.txt", "r") as f:
-        return [str(line.replace("\n", "").replace(".", "")) for line in f.readlines()]
+        return [str(line.replace("\n", "").replace(".", ""))
+                for line in f.readlines()]
 
 
 def part_1(inp):
@@ -12,12 +13,12 @@ def part_1(inp):
         fly = int(tmp_data[6])
         rest = int(tmp_data[13])
         race = 2503  # sec of the race
-        full_loop = race//(fly+rest)
-        last_sec = race % (fly+rest)
+        full_loop = race // (fly + rest)
+        last_sec = race % (fly + rest)
         last_dist_sec = last_sec
         if last_sec > fly:
             last_dist_sec = fly
-        dist = full_loop*speed*fly + last_dist_sec*speed
+        dist = full_loop * speed * fly + last_dist_sec * speed
         max_dist = max(max_dist, dist)
     return max_dist
 
@@ -34,17 +35,17 @@ def part_2(inp):
         data.append((who, speed, fly, rest))
     for who, _, _, _ in data:
         points[who] = 0
-    for i in range(1, 2503+1):
+    for i in range(1, 2503 + 1):
         race = i
         max_dist = 0
         tmp_res = []
         for who, speed, fly, rest in data:
-            full_loop = race//(fly+rest)
-            last_sec = race % (fly+rest)
+            full_loop = race // (fly + rest)
+            last_sec = race % (fly + rest)
             last_dist_sec = last_sec
             if last_sec > fly:
                 last_dist_sec = fly
-            dist = full_loop*speed*fly + last_dist_sec*speed
+            dist = full_loop * speed * fly + last_dist_sec * speed
             tmp_res.append((who, dist))
             max_dist = max(max_dist, dist)
         for w in [x for x, y in tmp_res if y == max_dist]:

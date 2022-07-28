@@ -9,7 +9,7 @@ def read_file() -> list:
 
 def part_1(inp):
     for val in inp:
-        second_val = 2020-val
+        second_val = 2020 - val
         if second_val in inp:
             return second_val * val
 

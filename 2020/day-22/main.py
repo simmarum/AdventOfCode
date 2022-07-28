@@ -17,7 +17,7 @@ def part_1(inp):
 
     ss = 0
     for i, e in enumerate(reversed(win_deck), 1):
-        ss += i*e
+        ss += i * e
     return ss
 
 
@@ -50,7 +50,7 @@ def _recurse_game(d1, d2, game_idx):
         _print(f"P2 card: {c2}")
         if len(d1) >= c1 and len(d2) >= c2:
             _print(f"Go to sub-game: {game_idx+1}")
-            rd1, rd2 = _recurse_game(d1[:c1], d2[:c2], game_idx+1)
+            rd1, rd2 = _recurse_game(d1[:c1], d2[:c2], game_idx + 1)
             _print(f"Return from sub-game: {game_idx+1}")
             if rd1:
                 d1.extend([c1, c2])
@@ -81,7 +81,7 @@ def part_2(inp):
     _print(f"Win deck: {win_deck}")
     ss = 0
     for i, e in enumerate(reversed(win_deck), 1):
-        ss += i*e
+        ss += i * e
     return ss
 
 

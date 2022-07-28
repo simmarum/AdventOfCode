@@ -10,7 +10,7 @@ def part_1(inp):
     val = inp[0]
     idx = 1
     while True:
-        h = hashlib.md5((val+str(idx)).encode("utf-8")).hexdigest()[0:5]
+        h = hashlib.md5((val + str(idx)).encode("utf-8")).hexdigest()[0:5]
         if (h[0] == '0') and (h == len(h) * h[0]):
             return idx
         idx += 1
@@ -20,7 +20,7 @@ def part_2(inp):
     val = inp[0]
     idx = 1
     while True:
-        h = hashlib.md5((val+str(idx)).encode("utf-8")).hexdigest()[0:6]
+        h = hashlib.md5((val + str(idx)).encode("utf-8")).hexdigest()[0:6]
         if (h[0] == '0') and (h == len(h) * h[0]):
             return idx
         idx += 1

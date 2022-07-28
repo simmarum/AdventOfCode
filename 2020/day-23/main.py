@@ -16,25 +16,25 @@ def part_1(inp):
     pick_pos = 1
     cur_pos = 0
 
-    for i in range(1, 1+100):
+    for i in range(1, 1 + 100):
         if i > 1:
             cups.append(cups.pop(0))
         _print(f"-- move {i} --")
         cur_c = cups[cur_pos]
         _print(f"cups: ({cur_c}) {cups[1:]}")
 
-        pick_c = cups[pick_pos:pick_pos+pick_len]
-        rest_c = cups[cur_pos:cur_pos+1]+cups[pick_pos+pick_len:]
+        pick_c = cups[pick_pos:pick_pos + pick_len]
+        rest_c = cups[cur_pos:cur_pos + 1] + cups[pick_pos + pick_len:]
         _print(f"pick up: {pick_c}")
 
-        dest_c = cur_c-1
+        dest_c = cur_c - 1
         while dest_c not in rest_c:
             dest_c -= 1
             if dest_c < min_lab:
                 dest_c = max_lab
         _print(f"destination: {dest_c}\n")
 
-        dest_idx = rest_c.index(dest_c)+1
+        dest_idx = rest_c.index(dest_c) + 1
         rest_c[dest_idx:dest_idx] = pick_c
         cups = rest_c
 
@@ -49,14 +49,14 @@ def part_1(inp):
 def part_2(inp):
     cups = inp
 
-    cups_map = list(range(1, 1_000_000+2))
+    cups_map = list(range(1, 1_000_000 + 2))
 
-    for k, v in zip(cups, cups[1:]+[max(cups)+1]):
+    for k, v in zip(cups, cups[1:] + [max(cups) + 1]):
         cups_map[k] = v
     cups_map[1_000_000] = cups[0]
     cups_map[0] = -1
     cur_cup = cups[0]
-    for i in range(1, 1+10_000_000):
+    for i in range(1, 1 + 10_000_000):
         _print(f"-- move {i} --")
         p1 = cups_map[cur_cup]
         p2 = cups_map[p1]
@@ -79,7 +79,7 @@ def part_2(inp):
 
     c1 = cups_map[1]
     c2 = cups_map[c1]
-    res = c1*c2
+    res = c1 * c2
     return res
 
 

@@ -11,15 +11,15 @@ def read_file() -> list:
 
 def part_1(inp):
     inp.sort()
-    inp = [0] + inp+[inp[-1]+3]
+    inp = [0] + inp + [inp[-1] + 3]
     x = list(itertools.starmap(operator.sub, zip(inp[1:], inp)))
     return x.count(1) * x.count(3)
 
 
 def part_2(inp):
     inp.sort()
-    inp = [0] + inp+[inp[-1]+3]
-    return reduce(lambda a, b: a*b,
+    inp = [0] + inp + [inp[-1] + 3]
+    return reduce(lambda a, b: a * b,
                   list(map(lambda el: 7 if el[1] == 4 else pow(2, el[1] - 1),
                            list(filter(lambda el: el[0] == 1,
                                        list(more_itertools.run_length.encode(

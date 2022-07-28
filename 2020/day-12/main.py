@@ -15,15 +15,15 @@ def part_1(inp):
     for val in inp:
         d, v = val[0], int(val[1:])
         if d == 'R':
-            pos_dir = (pos_dir + v//90) % 4
+            pos_dir = (pos_dir + v // 90) % 4
         elif d == 'L':
-            pos_dir = (pos_dir + 4 - v//90) % 4
+            pos_dir = (pos_dir + 4 - v // 90) % 4
         elif d == 'F':
             pos = list(
-                map(add, pos, map(lambda x: x*v, dd[pos_dir_all[pos_dir]])))
+                map(add, pos, map(lambda x: x * v, dd[pos_dir_all[pos_dir]])))
         else:
-            pos = list(map(add, pos, map(lambda x: x*v, dd[d])))
-    return abs(pos[0])+abs(pos[1])
+            pos = list(map(add, pos, map(lambda x: x * v, dd[d])))
+    return abs(pos[0]) + abs(pos[1])
 
 
 def part_2(inp):
@@ -34,17 +34,17 @@ def part_2(inp):
     for val in inp:
         d, v = val[0], int(val[1:])
         if d == 'R':
-            for _ in range(v//90):
+            for _ in range(v // 90):
                 w_pos = [-w_pos[1], w_pos[0]]
         elif d == 'L':
-            for _ in range(v//90):
+            for _ in range(v // 90):
                 w_pos = [w_pos[1], -w_pos[0]]
         elif d == 'F':
             pos = list(
-                map(add, pos, map(lambda x: x*v, w_pos)))
+                map(add, pos, map(lambda x: x * v, w_pos)))
         else:
-            w_pos = list(map(add, w_pos, map(lambda x: x*v, dd[d])))
-    return abs(pos[0])+abs(pos[1])
+            w_pos = list(map(add, w_pos, map(lambda x: x * v, dd[d])))
+    return abs(pos[0]) + abs(pos[1])
 
 
 def main():

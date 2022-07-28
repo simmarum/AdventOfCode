@@ -56,7 +56,7 @@ def _check_all_poss_1(in_data):
 
     cors = []
     for k, v in in_data.items():
-        cnt = sum([len(eem[e])-1 for e in _edges(v)[:4]])
+        cnt = sum([len(eem[e]) - 1 for e in _edges(v)[:4]])
         if cnt == 2:
             cors.append(k)
 
@@ -73,7 +73,7 @@ def _check_all_poss_2(in_data):
 
     cors = []
     for k, v in in_data.items():
-        cnt = sum([len(eem[e])-1 for e in _edges(v)[:4]])
+        cnt = sum([len(eem[e]) - 1 for e in _edges(v)[:4]])
         if cnt == 2:
             cors.append(k)
 
@@ -85,17 +85,17 @@ def _check_all_poss_2(in_data):
             ltv = nltv
             break
 
-    big_square_ind = [[None]*sqr for _ in range(sqr)]
+    big_square_ind = [[None] * sqr for _ in range(sqr)]
     big_square_ind[0][0] = (ltk, ltv)
     for y in range(sqr):
         if y > 0:
-            ak, av = big_square_ind[y-1][0]
+            ak, av = big_square_ind[y - 1][0]
             nk, nv = _find_next_square(ak, np.flip(
                 np.rot90(av, k=1), axis=0), eem, in_data)
             big_square_ind[y][0] = (nk, np.flip(np.rot90(nv, k=1), axis=0))
 
         for x in range(1, sqr):
-            ak, av = big_square_ind[y][x-1]
+            ak, av = big_square_ind[y][x - 1]
             big_square_ind[y][x] = _find_next_square(ak, av, eem, in_data)
 
     rows = []
@@ -118,13 +118,13 @@ def _check_all_poss_2(in_data):
     l_img = len(big_image)
     for n_img in _next_state(big_image):
         cnt = 0
-        for y in range(l_img-ly_m):
-            for x in range(l_img-lx_m):
+        for y in range(l_img - ly_m):
+            for x in range(l_img - lx_m):
                 good_one = True
                 for ym in range(ly_m):
                     for xm in range(lx_m):
                         if ((monster[ym][xm] == '#')
-                                and (n_img[y+ym][x+xm] != '#')):
+                                and (n_img[y + ym][x + xm] != '#')):
                             good_one = False
                             break
                     if not good_one:
@@ -134,7 +134,8 @@ def _check_all_poss_2(in_data):
         if cnt > 0:
             break
 
-    res = np.count_nonzero(n_img == '#') - cnt*np.count_nonzero(monster == '#')
+    res = np.count_nonzero(n_img == '#') - cnt * \
+        np.count_nonzero(monster == '#')
     return res
 
 

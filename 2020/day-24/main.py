@@ -25,8 +25,8 @@ map_guide = {
 
 def part_1(inp):
     p = re.compile(r"(e|se|sw|w|nw|ne)")
-    cc = map_size//2
-    hex_map = [[False]*map_size for _ in range(map_size)]
+    cc = map_size // 2
+    hex_map = [[False] * map_size for _ in range(map_size)]
     for val in inp:
         directions = re.findall(p, val)
         sx = cc
@@ -46,8 +46,8 @@ def _flip_floor(hex_map):
         for iy, y in enumerate(x):
             trues = 0
             for one_dir in map_guide.values():
-                tx = min(max(0, ix+one_dir[0]), map_size-1)
-                ty = min(max(0, iy+one_dir[1]), map_size-1)
+                tx = min(max(0, ix + one_dir[0]), map_size - 1)
+                ty = min(max(0, iy + one_dir[1]), map_size - 1)
                 tmp_tile = hex_map[tx][ty]
                 if tmp_tile:
                     trues += 1
@@ -60,7 +60,7 @@ def _flip_floor(hex_map):
 
 def part_2(inp, hex_map):
     flip_hex_map = deepcopy(hex_map)
-    for day in range(1, 1+100):
+    for day in range(1, 1 + 100):
         flip_hex_map = _flip_floor(flip_hex_map)
         res = sum([row.count(True) for row in flip_hex_map])
         _print(f"\tDay {day}: {res}")

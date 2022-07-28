@@ -10,7 +10,7 @@ def read_file() -> list:
 
 
 def next_pass(p):
-    new_p = bases.toBase26(bases.fromBase26(p)+1).rjust(8, 'a')
+    new_p = bases.toBase26(bases.fromBase26(p) + 1).rjust(8, 'a')
     op = None
     if "i" in new_p:
         op = "i"
@@ -22,7 +22,7 @@ def next_pass(p):
         op = "o"
         op_new = "p"
 
-    if op != None:
+    if op is not None:
         ii = new_p.index(op)
         new_p = (new_p[:ii] + op_new).ljust(8, 'a')
 
@@ -37,8 +37,8 @@ def part_1(inp):
         check_1 = False
         for idx, c in enumerate(val[:-2]):
             c1 = c
-            c2 = val[idx+1]
-            c3 = val[idx+2]
+            c2 = val[idx + 1]
+            c3 = val[idx + 2]
             if (chr(ord(c) + 1) == c2) and (chr(ord(c2) + 1) == c3):
                 check_1 = True
                 break
@@ -50,9 +50,9 @@ def part_1(inp):
         val_len = len(val)
         idx = 0
         while True:
-            if idx+1 >= val_len:
+            if idx + 1 >= val_len:
                 break
-            if val[idx] == val[idx+1]:
+            if val[idx] == val[idx + 1]:
                 check_3_cnt += 1
                 idx += 2
             else:

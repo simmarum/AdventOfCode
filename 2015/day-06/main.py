@@ -12,13 +12,13 @@ def part_1(inp):
         tmp = val.replace("turn ", "").split(" ")
         command = tmp[0]
         l, t = [int(x) for x in tmp[1].split(",")]
-        r, b = [int(x)+1 for x in tmp[3].split(",")]
+        r, b = [int(x) + 1 for x in tmp[3].split(",")]
         if command == 'on':
-            city[l:r, t:b] = np.ones((abs(r-l), abs(b-t)), int)
+            city[l:r, t:b] = np.ones((abs(r - l), abs(b - t)), int)
         if command == 'off':
-            city[l:r, t:b] = np.zeros((abs(r-l), abs(b-t)), int)
+            city[l:r, t:b] = np.zeros((abs(r - l), abs(b - t)), int)
         if command == 'toggle':
-            city[l:r, t:b] = (1-city[l:r, t:b])
+            city[l:r, t:b] = (1 - city[l:r, t:b])
     return np.sum(city)
 
 
@@ -28,15 +28,15 @@ def part_2(inp):
         tmp = val.replace("turn ", "").split(" ")
         command = tmp[0]
         l, t = [int(x) for x in tmp[1].split(",")]
-        r, b = [int(x)+1 for x in tmp[3].split(",")]
+        r, b = [int(x) + 1 for x in tmp[3].split(",")]
         if command == 'on':
-            city[l:r, t:b] += np.ones((abs(r-l), abs(b-t)), int)
+            city[l:r, t:b] += np.ones((abs(r - l), abs(b - t)), int)
         if command == 'off':
-            city[l:r, t:b] -= np.ones((abs(r-l), abs(b-t)), int)
+            city[l:r, t:b] -= np.ones((abs(r - l), abs(b - t)), int)
             city[l:r, t:b] = city[l:r, t:b].clip(min=0)
         if command == 'toggle':
-            city[l:r, t:b] += np.ones((abs(r-l), abs(b-t)), int)
-            city[l:r, t:b] += np.ones((abs(r-l), abs(b-t)), int)
+            city[l:r, t:b] += np.ones((abs(r - l), abs(b - t)), int)
+            city[l:r, t:b] += np.ones((abs(r - l), abs(b - t)), int)
     return np.sum(city)
 
 

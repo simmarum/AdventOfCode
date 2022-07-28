@@ -12,7 +12,7 @@ def part_1(inp):
         col = s[7:11]
         row = int(row, base=2)
         col = int(col, base=2)
-        max_id = max(max_id, row*8+col)
+        max_id = max(max_id, row * 8 + col)
 
     return max_id
 
@@ -25,9 +25,8 @@ def part_2(inp):
         s_id = int(s[0:7], base=2) * 8 + int(s[7:11], base=2)
         found_ids.add(s_id)
 
-    my_ids = list(
-        set(range(min(found_ids)-1, max(found_ids)+1)).difference(found_ids))
-    my_ids.sort()
+    my_ids = sorted(
+        set(range(min(found_ids) - 1, max(found_ids) + 1)).difference(found_ids))
     return my_ids
 
 

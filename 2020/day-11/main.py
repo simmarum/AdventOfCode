@@ -11,7 +11,7 @@ def _magic_change(arr):
     for (x, y), value in np.ndenumerate(arr):
         if value == '.':
             continue
-        s_arr = arr[max(0, x-1):x+2, max(0, y-1):y+2]
+        s_arr = arr[max(0, x - 1):x + 2, max(0, y - 1):y + 2]
         unique, counts = np.unique(s_arr, return_counts=True)
         sub_data = dict(zip(unique, counts))
         if (value == 'L') and (sub_data.get('#') is None):
@@ -23,7 +23,7 @@ def _magic_change(arr):
 
 def part_1(inp):
     length = max(map(len, inp))
-    board = np.array([xi+[None]*(length-len(xi)) for xi in inp])
+    board = np.array([xi + [None] * (length - len(xi)) for xi in inp])
     calc_board = board
     while True:
         new_board = _magic_change(calc_board)
@@ -44,8 +44,8 @@ def _magic_change_2(arr):
             continue
         cnt_occup = 0
         for i, j in dd:
-            xi = x+i
-            yj = y+j
+            xi = x + i
+            yj = y + j
             while (0 <= xi < m) and (0 <= yj < n):
                 if arr[xi][yj] == '#':
                     cnt_occup += 1
@@ -64,7 +64,7 @@ def _magic_change_2(arr):
 
 def part_2(inp):
     length = max(map(len, inp))
-    board = np.array([xi+[None]*(length-len(xi)) for xi in inp])
+    board = np.array([xi + [None] * (length - len(xi)) for xi in inp])
     calc_board = board
     while True:
         new_board = _magic_change_2(calc_board)

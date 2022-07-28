@@ -3,7 +3,8 @@ from itertools import permutations
 
 def read_file() -> list:
     with open(f"{__file__.rstrip('main.py')}input.txt", "r") as f:
-        return [str(line.replace("\n", "").replace(".", "")) for line in f.readlines()]
+        return [str(line.replace("\n", "").replace(".", ""))
+                for line in f.readlines()]
 
 
 def part_1(inp):

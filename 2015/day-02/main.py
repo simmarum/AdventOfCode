@@ -10,11 +10,11 @@ def part_1(inp):
     all_paper = 0
     for val in inp:
         l, w, h = [int(x) for x in val.split("x")]
-        a = l*w
-        b = l*h
-        c = w*h
+        a = l * w
+        b = l * h
+        c = w * h
         trash = min(a, b, c)
-        present = 2*a + 2*b + 2*c + trash
+        present = 2 * a + 2 * b + 2 * c + trash
         all_paper += present
     return all_paper
 
@@ -25,7 +25,7 @@ def part_2(inp):
         l, w, h = [int(x) for x in val.split("x")]
         a = min(l, w, h)
         b = min(list((Counter([l, w, h]) - Counter([a])).elements()))
-        all_ribbon += ((a+a+b+b) + (l*w*h))
+        all_ribbon += ((a + a + b + b) + (l * w * h))
     return all_ribbon
 
 

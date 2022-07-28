@@ -72,8 +72,9 @@ def part_2(inp):
             children.append((new_x, new_y, -1))
 
         for child in children:
-            tmp_risk_calc = (inp[child[1] % tyy][child[0] %
-                                                 txx] + child[0] // txx + child[1] // tyy)
+            tmp_risk_calc = (inp[child[1] %
+                                 tyy][child[0] %
+                                      txx] + child[0] // txx + child[1] // tyy)
             tmp_risk_calc = tmp_risk_calc % 9 if tmp_risk_calc > 9 else tmp_risk_calc
             new_risk = path_risks[(act_point[0], act_point[1])] + tmp_risk_calc
             if ((child[0], child[1]) not in path_risks) or (

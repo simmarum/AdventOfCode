@@ -8,18 +8,18 @@ def read_file() -> list:
 
 class P1_int(int):
     def __add__(self, other):
-        return P1_int(int(self)+int(other))
+        return P1_int(int(self) + int(other))
 
     def __sub__(self, other):
-        return P1_int(int(self)*int(other))
+        return P1_int(int(self) * int(other))
 
 
 class P2_int(int):
     def __add__(self, other):
-        return P2_int(int(self)*int(other))
+        return P2_int(int(self) * int(other))
 
     def __mul__(self, other):
-        return P2_int(int(self)+int(other))
+        return P2_int(int(self) + int(other))
 
 
 def part_1(inp):

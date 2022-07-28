@@ -26,7 +26,7 @@ def part_2(inp):
     valid_cnt = 0
     for val in inp:
         c_min, c_max, c_char, c_pass = prepare_input(val)
-        if ((c_pass[c_min-1] == c_char) != (c_pass[c_max-1] == c_char)):
+        if ((c_pass[c_min - 1] == c_char) != (c_pass[c_max - 1] == c_char)):
             valid_cnt += 1
 
     return valid_cnt

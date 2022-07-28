@@ -10,7 +10,7 @@ def part_1(inp):
     pre_n = 25
     inp_len = len(inp)
     for i in range(pre_n, inp_len):
-        if inp[i] not in [sum(x) for x in combinations(inp[i-pre_n:i], 2)]:
+        if inp[i] not in [sum(x) for x in combinations(inp[i - pre_n:i], 2)]:
             return inp[i]
     return None
 

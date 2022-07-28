@@ -17,13 +17,15 @@ def part_1(inp):
         if y <= d:
             act_s = s
             d = y
-    return act_s*d
+    return act_s * d
 
 
-def nwd(a, b): return nwd(b, a % b) if b else a
+def nwd(a, b):
+    return nwd(b, a % b) if b else a
 
 
-def nww(a, b): return a*b//nwd(a, b)
+def nww(a, b):
+    return a * b // nwd(a, b)
 
 
 def mul_inv(a, b):
@@ -51,14 +53,14 @@ def _check_nww(s):
 
 def part_2(inp):
     # Chinese remainder theorem
-    sched = [(int(v)-i, int(v))
+    sched = [(int(v) - i, int(v))
              for i, v in enumerate(inp[1].split(',')) if v != 'x']
     n = _check_nww(sched)
-    sched = [(v[0], v[1], n//v[1], mul_inv(n//v[1], v[1])) for v in sched]
+    sched = [(v[0], v[1], n // v[1], mul_inv(n // v[1], v[1])) for v in sched]
     ss = 0
     sm = 1
     for v in sched:
-        ss += v[0]*v[3]*v[2]
+        ss += v[0] * v[3] * v[2]
         sm *= v[1]
     res = ss % sm
     return res

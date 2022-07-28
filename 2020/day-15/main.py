@@ -22,10 +22,10 @@ def part_1(inp):
 
 def part_2(inp):
     nums = list(map(int, inp[0].split(",")))
-    game_d = {x: deque([idx+1], maxlen=2) for idx, x in enumerate(nums)}
+    game_d = {x: deque([idx + 1], maxlen=2) for idx, x in enumerate(nums)}
     lgame = len(game_d)
     last_num = nums[-1]
-    for i in range(lgame, 1+30000000):
+    for i in range(lgame, 1 + 30000000):
         if len(game_d[last_num]) == 2:
             new_num = game_d[last_num][1] - game_d[last_num][0]
         else:

@@ -13,7 +13,7 @@ def part_1(inp):
         r = x[1].strip().split("or")
         for rr in r:
             xx = rr.split("-")
-            rules[x[0]].update(set(range(int(xx[0]), int(xx[1])+1)))
+            rules[x[0]].update(set(range(int(xx[0]), int(xx[1]) + 1)))
 
     all_vals = set()
     for v in rules.values():
@@ -35,7 +35,7 @@ def part_2(inp):
         r = x[1].strip().split("or")
         for rr in r:
             xx = rr.split("-")
-            rules[x[0]].update(set(range(int(xx[0]), int(xx[1])+1)))
+            rules[x[0]].update(set(range(int(xx[0]), int(xx[1]) + 1)))
 
     my_ticket = list(map(int, inp[1].split("\n")[1].split(",")))
 

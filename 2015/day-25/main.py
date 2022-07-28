@@ -10,8 +10,8 @@ def part_1(inp):
     code = 20151125
     a = 252533
     b = 33554393
-    row = int(re.search('row (\d+)', inp[0]).group(1))
-    column = int(re.search('column (\d+)', inp[0]).group(1))
+    row = int(re.search('row (\\d+)', inp[0]).group(1))
+    column = int(re.search('column (\\d+)', inp[0]).group(1))
     code_number = int((((row + column - 1) / 2) *
                        (row + column)) - row + 1)
     for _ in range(2, code_number + 1):
