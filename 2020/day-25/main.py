@@ -1,19 +1,9 @@
-import itertools
-
-
 def read_file() -> list:
     with open(f"{__file__.rstrip('main.py')}input.txt", "r") as f:
-        return [int(line) for line in f.read().splitlines()]
+        return [str(line) for line in f.readlines()]
 
 
 def part_1(inp):
-    c = inp[0]
-    d = inp[1]
-    sub_num = 7
-    m = 20201227
-    for i in itertools.count():
-        if pow(sub_num, i, m) == d:
-            return pow(c, i, m)
     return None
 
 
