@@ -94,7 +94,7 @@ def part_2(inp):
             if (y, x) in border:
                 if c == 'S':
                     c = replace_s
-                if c in '|S':
+                if c in '|':
                     inside = not inside
                 elif c in 'FL':
                     last_char = c
