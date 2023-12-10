@@ -49,18 +49,18 @@ def add_pos(a, b):
 
 
 def print_tiles(tiles, path):
-    l = {
+    lookup = {
         (0, 1): '>',
         (0, -1): '<',
         (1, 0): 'v',
         (-1, 0): '^',
     }
-    tt = [[' ']*(1+max([t[1] for t in tiles.keys()]))
-          for _ in range(1+max([t[0] for t in tiles.keys()]))]
+    tt = [[' '] * (1 + max([t[1] for t in tiles.keys()]))
+          for _ in range(1 + max([t[0] for t in tiles.keys()]))]
     for k, v in tiles.items():
         tt[k[0]][k[1]] = v
     for k, v in path:
-        tt[k[0]][k[1]] = l[v]
+        tt[k[0]][k[1]] = lookup[v]
     [print(''.join(t)) for t in tt]
 
 
@@ -114,7 +114,7 @@ def part_1(inp):
         (-1, 0): 3,
     }
     facing = facing_l[curr_dir]
-    return 1000*row + 4*col + facing
+    return 1000 * row + 4 * col + facing
 
 
 def part_2(inp):

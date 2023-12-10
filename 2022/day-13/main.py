@@ -48,20 +48,20 @@ def parse_inp(inp):
     return data
 
 
-def compare_items(l, r):
+def compare_items(left, right):
     result = 0
-    for i in range(min(len(l), len(r))):
-        if (isinstance(l[i], list)) and (isinstance(r[i], list)):
-            result = compare_items(l[i], r[i])
-        elif (isinstance(l[i], list)) and (isinstance(r[i], list) == False):
-            result = compare_items(l[i], [r[i]])
-        elif (isinstance(l[i], list) == False) and (isinstance(r[i], list)):
-            result = compare_items([l[i]], r[i])
+    for i in range(min(len(left), len(right))):
+        if (isinstance(left[i], list)) and (isinstance(right[i], list)):
+            result = compare_items(left[i], right[i])
+        elif (isinstance(left[i], list)) and (isinstance(right[i], list) is False):
+            result = compare_items(left[i], [right[i]])
+        elif (isinstance(left[i], list) is False) and (isinstance(right[i], list)):
+            result = compare_items([left[i]], right[i])
         else:
-            result = int(l[i] > r[i]) - int(l[i] < r[i])
+            result = int(left[i] > right[i]) - int(left[i] < right[i])
         if result:
             return result
-    return int(len(l) > len(r)) - int(len(l) < len(r))
+    return int(len(left) > len(right)) - int(len(left) < len(right))
 
 
 def part_1(inp):

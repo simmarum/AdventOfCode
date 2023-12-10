@@ -1,6 +1,3 @@
-from copy import deepcopy
-
-
 def read_file() -> list:
     with open(f"{__file__.rstrip('main.py')}input.txt", "r") as f:
         return [str(line) for line in f.readlines()]
@@ -44,8 +41,13 @@ def part_2(inp):
         if "seeds:" in line:
             tmp_seeds = [int(x.strip())
                          for x in line.replace("seeds: ", "").split(" ")]
-            seeds = [(tmp_seeds[i * 2],
-                      tmp_seeds[i * 2] + tmp_seeds[(i * 2) + 1] - 1) for i in range(len(tmp_seeds) // 2)]
+            seeds = [
+                (
+                    tmp_seeds[i * 2],
+                    tmp_seeds[i * 2] + tmp_seeds[(i * 2) + 1] - 1
+                )
+                for i in range(len(tmp_seeds) // 2)
+            ]
             seeds = sorted(seeds)
             continue
         if "map:" in line:

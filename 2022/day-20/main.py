@@ -1,5 +1,4 @@
 from collections import deque
-from copy import deepcopy
 
 
 def read_file() -> list:
@@ -24,7 +23,7 @@ def part_1(inp):
 
 
 def part_2(inp):
-    inp = [x*811589153 for x in inp]
+    inp = [x * 811589153 for x in inp]
     zero_val = (inp.index(0), 0)
     buffer = deque(enumerate(inp))
     original_appears = buffer.copy()

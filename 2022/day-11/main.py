@@ -1,5 +1,4 @@
 from collections import defaultdict
-import sys
 
 
 def read_file() -> list:

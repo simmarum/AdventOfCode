@@ -9,10 +9,9 @@ def read_file() -> list:
 
 def send_sand(sand_source, space, max_x, max_y):
     if sand_source[1] > max_y:
-        print(sand_source)
         return False
     for dir in [(0, 1), (-1, 1), (1, 1)]:
-        new_pos = (sand_source[0]+dir[0], sand_source[1]+dir[1])
+        new_pos = (sand_source[0] + dir[0], sand_source[1] + dir[1])
         if space[new_pos[1], new_pos[0]] == '.':
             return send_sand(new_pos, space, max_x, max_y)
     else:
@@ -31,17 +30,17 @@ def part_1(inp):
         for p1, p2 in zip(wall, wall[1:]):
             if p1[0] == p2[0]:
                 x = p1[0]
-                for y in range(min(p1[1], p2[1]), max(p1[1], p2[1])+1):
+                for y in range(min(p1[1], p2[1]), max(p1[1], p2[1]) + 1):
                     walls.add((x, y))
             if p1[1] == p2[1]:
                 y = p1[1]
-                for x in range(min(p1[0], p2[0]), max(p1[0], p2[0])+1):
+                for x in range(min(p1[0], p2[0]), max(p1[0], p2[0]) + 1):
                     walls.add((x, y))
     max_x = max([p[0] for p in walls])
     max_y = max([p[1] for p in walls])
     margin = 5
 
-    space = np.full(shape=(max_y+margin, max_x+margin), fill_value='.')
+    space = np.full(shape=(max_y + margin, max_x + margin), fill_value='.')
     for pw in walls:
         space[pw[1], pw[0]] = '#'
 
@@ -63,21 +62,21 @@ def part_2(inp):
         for p1, p2 in zip(wall, wall[1:]):
             if p1[0] == p2[0]:
                 x = p1[0]
-                for y in range(min(p1[1], p2[1]), max(p1[1], p2[1])+1):
+                for y in range(min(p1[1], p2[1]), max(p1[1], p2[1]) + 1):
                     walls.add((x, y))
             if p1[1] == p2[1]:
                 y = p1[1]
-                for x in range(min(p1[0], p2[0]), max(p1[0], p2[0])+1):
+                for x in range(min(p1[0], p2[0]), max(p1[0], p2[0]) + 1):
                     walls.add((x, y))
     max_x = max([p[0] for p in walls])
     max_y = max([p[1] for p in walls])
     margin = 1000
     infinite_floor_margin = 2
-    for x in range(0, max_x+margin):
-        walls.add((x, max_y+infinite_floor_margin))
+    for x in range(0, max_x + margin):
+        walls.add((x, max_y + infinite_floor_margin))
     max_y = max([p[1] for p in walls])
 
-    space = np.full(shape=(max_y+margin, max_x+margin), fill_value='.')
+    space = np.full(shape=(max_y + margin, max_x + margin), fill_value='.')
     for pw in walls:
         space[pw[1], pw[0]] = '#'
 
@@ -89,7 +88,7 @@ def part_2(inp):
                                 max_y)
         if sand_placed is False:
             break
-    return i+1
+    return i + 1
 
 
 def main():

@@ -1,6 +1,4 @@
 import numpy as np
-import scipy.signal as signal
-import cv2
 
 
 def read_file() -> list:

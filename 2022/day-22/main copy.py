@@ -1,7 +1,4 @@
 import sys
-import copy
-import re
-from collections import defaultdict as dd
 read = sys.stdin.read
 f = open("input.txt")
 

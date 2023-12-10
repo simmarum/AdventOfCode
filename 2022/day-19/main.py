@@ -56,17 +56,17 @@ def max_geos(state):
                 state[8],
                 state[9],
                 state[10],
-                state[11]+1,
-                state[12]+state[8]-state[5],
-                state[13]+state[9],
-                state[14]+state[10]-state[6],
-                state[15]-1,
+                state[11] + 1,
+                state[12] + state[8] - state[5],
+                state[13] + state[9],
+                state[14] + state[10] - state[6],
+                state[15] - 1,
                 state[16]
             )
         )
     possible_obs = state[14]
-    for i in range(0, state[15]-2):
-        possible_obs += state[10]+i
+    for i in range(0, state[15] - 2):
+        possible_obs += state[10] + i
     if possible_obs < state[6]:
         return state[11] * state[15]
 
@@ -80,10 +80,10 @@ def max_geos(state):
                     state[9],
                     state[10],
                     state[11],
-                    state[12]+state[8],
-                    state[13]+state[9],
-                    state[14]+state[10],
-                    state[15]-1,
+                    state[12] + state[8],
+                    state[13] + state[9],
+                    state[14] + state[10],
+                    state[15] - 1,
                     state[16]
                 )
         )
@@ -94,14 +94,14 @@ def max_geos(state):
             max_geos(
                     (
                         *state[0:8],
-                        state[8]+1,
+                        state[8] + 1,
                         state[9],
                         state[10],
                         state[11],
-                        state[12]+state[8]-state[1],
-                        state[13]+state[9],
-                        state[14]+state[10],
-                        state[15]-1,
+                        state[12] + state[8] - state[1],
+                        state[13] + state[9],
+                        state[14] + state[10],
+                        state[15] - 1,
                         state[16]
                     )
             )
@@ -113,31 +113,32 @@ def max_geos(state):
                     (
                         *state[0:8],
                         state[8],
-                        state[9]+1,
+                        state[9] + 1,
                         state[10],
                         state[11],
-                        state[12]+state[8]-state[2],
-                        state[13]+state[9],
-                        state[14]+state[10],
-                        state[15]-1,
+                        state[12] + state[8] - state[2],
+                        state[13] + state[9],
+                        state[14] + state[10],
+                        state[15] - 1,
                         state[16]
                     )
             )
         )
     # obs robot
-    if (state[12] >= state[3]) and (state[13] >= state[4]) and (state[10] < state[6]):
+    if (state[12] >= state[3]) and (
+            state[13] >= state[4]) and (state[10] < state[6]):
         new_states.append(
             max_geos(
                     (
                         *state[0:8],
                         state[8],
                         state[9],
-                        state[10]+1,
+                        state[10] + 1,
                         state[11],
-                        state[12]+state[8]-state[3],
-                        state[13]+state[9]-state[4],
-                        state[14]+state[10],
-                        state[15]-1,
+                        state[12] + state[8] - state[3],
+                        state[13] + state[9] - state[4],
+                        state[14] + state[10],
+                        state[15] - 1,
                         state[16]
                     )
             )
@@ -156,7 +157,7 @@ def part_1(inp):
                 1
             )
         )
-        total += blueprint[0]*b_res
+        total += blueprint[0] * b_res
     return total
 
 
@@ -171,7 +172,6 @@ def part_2(inp):
                 2
             )
         )
-        print(blueprint[0], b_res)
         total *= b_res
     return total
 
