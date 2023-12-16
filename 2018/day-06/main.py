@@ -25,8 +25,10 @@ def part_1(inp):
 
     for y in range(len(board)):
         for x in range(len(board[y])):
-            neareast_points = sorted(
-                [(abs(p[0] + marg - x) + abs(p[1] + marg - y), i) for i, p in enumerate(points)])[0:2]
+            neareast_points = sorted([
+                (abs(p[0] + marg - x) + abs(p[1] + marg - y), i)
+                for i, p in enumerate(points)
+            ])[0:2]
             if neareast_points[0][0] < neareast_points[1][0]:
                 if neareast_points[0][1] == 0:
                     # board[y][x] = chr(neareast_points[0][1]+ord('A'))

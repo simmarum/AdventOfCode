@@ -15,21 +15,14 @@ def part_1(inp):
             "\\[(\\d+\\-\\d+\\-\\d+) (\\d+):(\\d+)\\] Guard #(\\d+) begins shift",
             line)
         if m:
-            date = m.group(1)
-            hour = m.group(2)
-            minute = m.group(3)
             guard_id = m.group(4)
         m = re.match(
             "\\[(\\d+\\-\\d+\\-\\d+) (\\d+):(\\d+)\\] falls asleep",
             line)
         if m:
-            sleep_date = m.group(1)
-            sleep_hour = m.group(2)
             sleep_minute = m.group(3)
         m = re.match("\\[(\\d+\\-\\d+\\-\\d+) (\\d+):(\\d+)\\] wakes up", line)
         if m:
-            wake_date = m.group(1)
-            wake_hour = m.group(2)
             wake_minute = m.group(3)
             collected_data[guard_id].extend(
                 range(int(sleep_minute), int(wake_minute)))
@@ -53,21 +46,14 @@ def part_2(inp):
             "\\[(\\d+\\-\\d+\\-\\d+) (\\d+):(\\d+)\\] Guard #(\\d+) begins shift",
             line)
         if m:
-            date = m.group(1)
-            hour = m.group(2)
-            minute = m.group(3)
             guard_id = m.group(4)
         m = re.match(
             "\\[(\\d+\\-\\d+\\-\\d+) (\\d+):(\\d+)\\] falls asleep",
             line)
         if m:
-            sleep_date = m.group(1)
-            sleep_hour = m.group(2)
             sleep_minute = m.group(3)
         m = re.match("\\[(\\d+\\-\\d+\\-\\d+) (\\d+):(\\d+)\\] wakes up", line)
         if m:
-            wake_date = m.group(1)
-            wake_hour = m.group(2)
             wake_minute = m.group(3)
             collected_data[guard_id].extend(
                 range(int(sleep_minute), int(wake_minute)))

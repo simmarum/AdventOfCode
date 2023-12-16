@@ -12,10 +12,14 @@ def part_1(inp):
     screen_size = 300
     screen = np.empty((screen_size, screen_size), dtype=np.int8)
     for iy, ix in np.ndindex(screen.shape):
-        screen[iy, ix] = ((((((ix+10)*iy)+serial_number)*(ix+10))//100) % 10)-5
+        screen[iy, ix] = (
+            (((((ix + 10) * iy) + serial_number) * (ix + 10)) // 100) % 10) - 5
 
     new_screen = signal.convolve2d(screen, np.ones((3, 3)), mode='valid')
-    return ','.join([str(int(p)) for p in (np.unravel_index(new_screen.argmax(), new_screen.shape))[::-1]])
+    return ','.join([
+        str(int(p))
+        for p in (np.unravel_index(new_screen.argmax(), new_screen.shape))[::-1]
+    ])
 
 
 def part_2(inp):
@@ -24,12 +28,13 @@ def part_2(inp):
     screen_size = 300
     screen = np.empty((screen_size, screen_size), dtype=np.int8)
     for iy, ix in np.ndindex(screen.shape):
-        screen[iy, ix] = ((((((ix+10)*iy)+serial_number)*(ix+10))//100) % 10)-5
+        screen[iy, ix] = (
+            (((((ix + 10) * iy) + serial_number) * (ix + 10)) // 100) % 10) - 5
     max_fuel = 0
     max_fuel_idx = (None, None)
     max_fuel_size = 0
 
-    for window_size in range(1, 40+1):
+    for window_size in range(1, 40 + 1):
         new_screen = signal.convolve2d(screen, np.ones(
             (window_size, window_size)), mode='valid')
         tmp_idx = (np.unravel_index(new_screen.argmax(), new_screen.shape))
@@ -38,7 +43,8 @@ def part_2(inp):
             max_fuel = tmp_max
             max_fuel_idx = tmp_idx
             max_fuel_size = window_size
-    return ','.join([str(int(p)) for p in max_fuel_idx[::-1]]+[str(max_fuel_size)])
+    return ','.join([str(int(p))
+                    for p in max_fuel_idx[::-1]] + [str(max_fuel_size)])
 
 
 def main():

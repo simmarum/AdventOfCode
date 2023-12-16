@@ -1,6 +1,5 @@
 from ast import literal_eval
 from copy import copy
-import pprint
 
 
 def read_file() -> list:
