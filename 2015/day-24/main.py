@@ -15,7 +15,6 @@ def split_presents(inp, how_many_groups):
     p_sum = sum(presents)
     w_group = p_sum // how_many_groups
     first_groups = []
-    fg = []
     for i in range(1, len(presents)):
         first_groups = [combo for combo in itertools.combinations(
             presents, i) if sum(combo) == w_group]

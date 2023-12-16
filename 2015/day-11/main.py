@@ -1,6 +1,5 @@
 # pip install bases.py
 from bases import Bases
-from collections import defaultdict
 bases = Bases()
 
 
@@ -36,7 +35,6 @@ def part_1(inp):
         val = next_pass(val)
         check_1 = False
         for idx, c in enumerate(val[:-2]):
-            c1 = c
             c2 = val[idx + 1]
             c3 = val[idx + 2]
             if (chr(ord(c) + 1) == c2) and (chr(ord(c2) + 1) == c3):

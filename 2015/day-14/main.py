@@ -8,7 +8,6 @@ def part_1(inp):
     max_dist = 0
     for val in inp:
         tmp_data = val.split(" ")
-        who = tmp_data[0]
         speed = int(tmp_data[3])
         fly = int(tmp_data[6])
         rest = int(tmp_data[13])
