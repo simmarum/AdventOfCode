@@ -1,6 +1,5 @@
 from copy import deepcopy
 from functools import reduce
-from hashlib import new
 from operator import xor
 
 

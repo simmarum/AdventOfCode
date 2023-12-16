@@ -8,8 +8,8 @@ def read_file() -> list:
 
 def parse_components(inp):
     components = defaultdict(set)
-    for l in inp:
-        a, b = [int(x) for x in l.split('/')]
+    for line in inp:
+        a, b = [int(x) for x in line.split('/')]
         components[a].add(b)
         components[b].add(a)
     return components

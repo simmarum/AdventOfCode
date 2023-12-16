@@ -32,8 +32,12 @@ def solve_board(board, is_part_2):
             elif angle == 2:
                 dir = (-dir[0], -dir[1])
             new_point = (curr_point[0] + dir[0], curr_point[1] + dir[1])
-            if ((new_point[0] < board_len_0) and (new_point[1] < board_len_1) and (
-                    new_point[0] >= 0) and (new_point[1] >= 0)) and board[new_point[0]][new_point[1]] != ' ':
+            if (
+                (new_point[0] < board_len_0) and
+                (new_point[1] < board_len_1) and
+                (new_point[0] >= 0) and
+                (new_point[1] >= 0)
+            ) and board[new_point[0]][new_point[1]] != ' ':
                 path.append(board[new_point[0]][new_point[1]])
                 curr_point = new_point
                 break
