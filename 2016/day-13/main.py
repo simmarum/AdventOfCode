@@ -1,5 +1,4 @@
 from copy import deepcopy
-import math
 
 
 def read_file() -> list:

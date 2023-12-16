@@ -1,5 +1,4 @@
 from operator import xor
-import re
 
 
 def read_file() -> list:
@@ -33,7 +32,7 @@ def part_1(inp):
         new_line_word = []
         for word in line_words:
             has_palindrom = find_palindrom_4(word[1])
-            good_combination = not(xor(has_palindrom, word[0]))
+            good_combination = not (xor(has_palindrom, word[0]))
             new_line_word.append((word[0], word[1], good_combination))
         if any([word[2] for word in new_line_word if word[0] is True]) and all(
                 [word[2] for word in new_line_word if word[0] is False]):

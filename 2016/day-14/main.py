@@ -1,4 +1,3 @@
-from calendar import c
 from hashlib import md5
 import re
 

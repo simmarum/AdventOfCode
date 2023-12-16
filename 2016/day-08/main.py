@@ -1,4 +1,3 @@
-from dis import dis
 import re
 
 

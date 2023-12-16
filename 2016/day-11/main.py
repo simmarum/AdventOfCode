@@ -1,6 +1,5 @@
 from collections import deque
 from copy import deepcopy
-from math import nextafter
 import re
 from itertools import combinations, chain
 
@@ -122,7 +121,10 @@ def read_board(inp, part_2):
     for line in inp:
         floor = line.split()[1]
         if (part_2) and (floors_lookup[floor] == 1):
-            line = line + 'elerium generator elerium-compatible microchip dilithium generator dilithium-compatible microchip'
+            line = line + 'elerium generator '
+            line = line + 'elerium-compatible microchip '
+            line = line + 'dilithium generator '
+            line = line + 'dilithium-compatible microchip'
         generators = re.findall(r'\w+(?= generator)', line)
         for name in generators:
             if name not in lookup_table:
