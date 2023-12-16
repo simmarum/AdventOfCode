@@ -1,6 +1,5 @@
 import numpy as np
 from itertools import combinations
-import heapq
 
 
 def read_file() -> list:

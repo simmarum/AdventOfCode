@@ -20,8 +20,9 @@ def resolve_springs(springs, rules):
         else:
             return 1
     if springs[0] == '#':  # we proceed bad string
+        # no more space or there is good spring one on the path
         if (len(springs) < rules[0]) or (
-                '.' in springs[:rules[0]]):  # no more space or there is good spring one on the path
+                '.' in springs[:rules[0]]):
             return 0
         elif len(springs) == rules[0]:  # last possible combination
             if len(rules) == 1:
