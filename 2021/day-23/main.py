@@ -1,6 +1,5 @@
 import heapq
 from dataclasses import dataclass
-import heapq
 
 
 def read_file() -> list:

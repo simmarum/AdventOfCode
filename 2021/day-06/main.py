@@ -24,8 +24,29 @@ def part_2(inp):
     for _ in range(days):
         ocean[9] += ocean[0]
         ocean[7] += ocean[0]
-        ocean[0], ocean[1], ocean[2], ocean[3], ocean[4], ocean[5], ocean[6], ocean[7], ocean[8], ocean[9] = \
-            ocean[1], ocean[2], ocean[3], ocean[4], ocean[5], ocean[6], ocean[7], ocean[8], ocean[9], 0
+        (
+            ocean[0],
+            ocean[1],
+            ocean[2],
+            ocean[3],
+            ocean[4],
+            ocean[5],
+            ocean[6],
+            ocean[7],
+            ocean[8],
+            ocean[9]
+        ) = (
+            ocean[1],
+            ocean[2],
+            ocean[3],
+            ocean[4],
+            ocean[5],
+            ocean[6],
+            ocean[7],
+            ocean[8],
+            ocean[9],
+            0
+        )
     return sum(ocean.values())
 
 

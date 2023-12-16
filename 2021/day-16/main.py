@@ -1,4 +1,4 @@
-from math import prod  # used in exec
+from math import prod  # used in exec # noqa: F401
 
 
 def read_file() -> list:
@@ -133,20 +133,20 @@ def _compute_res(lit_val):
     res = ''
     for v in lit_val:
         if isinstance(v[0], list):
-            tmp_res = f'\n({_compute_res(v[1])})'
-            res += tmp_res
+            tr = f'\n({_compute_res(v[1])})'
+            res += tr
         elif v[0] in (5, 6, 7):
-            tmp_res = f'\n({calcs[v[0]].format(x=_compute_res([v[1][0]]),y=_compute_res([v[1][1]]))}),'
-            res += tmp_res
+            tr = f'\n({calcs[v[0]].format(x=_compute_res([v[1][0]]),y=_compute_res([v[1][1]]))}),'
+            res += tr
         elif isinstance(v[1], int):
-            tmp_res = f'\n({calcs[v[0]].format(x=v[1])}),'
-            res += tmp_res
+            tr = f'\n({calcs[v[0]].format(x=v[1])}),'
+            res += tr
         else:
             if isinstance(v[1][0], list):
-                tmp_res = f'\n({calcs[v[0]].format(x=_compute_res(v[1]))}),'
+                tr = f'\n({calcs[v[0]].format(x=_compute_res(v[1]))}),'
             else:
-                tmp_res = f'\n({calcs[v[0]].format(x=_compute_res([v[1]]))}),'
-            res += tmp_res
+                tr = f'\n({calcs[v[0]].format(x=_compute_res([v[1]]))}),'
+            res += tr
     return res
 
 

@@ -108,7 +108,7 @@ def part_1(inp):
         for act in scanner_to_process:
             for k, v in data.items():
                 print(
-                    f"Progress: check {act} vs {k} (already found [{len(scanners_pos)}] {scanner_good}")
+                    f"Progress: check {act} vs {k} (found [{len(scanners_pos)}] {scanner_good}")
                 if k in scanner_good:
                     continue
                 at_least_12 = False

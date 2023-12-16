@@ -1,6 +1,3 @@
-from itertools import combinations_with_replacement
-
-
 def read_file() -> list:
     with open(f"{__file__.rstrip('main.py')}input.txt", "r") as f:
         return [str(line).replace('\n', '') for line in f.readlines()]
