@@ -17,10 +17,10 @@ Thanks to [juliamarc](https://github.com/juliamarc) for idea and [based code](ht
 
 <!-- AOC TILES BEGIN -->
 <h1 align="center">
-  Advent of Code - 358/450 ⭐
+  Advent of Code - 360/450 ⭐
 </h1>
 <h1 align="center">
-  2023 - 34 ⭐
+  2023 - 36 ⭐
 </h1>
 <a href="2023/day-01/main.py">
   <img src=".aoc_tiles/tiles/2023/01.png" width="161px">
@@ -72,6 +72,9 @@ Thanks to [juliamarc](https://github.com/juliamarc) for idea and [based code](ht
 </a>
 <a href="2023/day-17/main.py">
   <img src=".aoc_tiles/tiles/2023/17.png" width="161px">
+</a>
+<a href="2023/day-18/main.py">
+  <img src=".aoc_tiles/tiles/2023/18.png" width="161px">
 </a>
 <h1 align="center">
   2022 - 42 ⭐
