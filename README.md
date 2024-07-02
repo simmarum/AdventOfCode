@@ -5,7 +5,7 @@
 Thanks to [Advent Of Code to Markdown](https://github.com/antonio-ramadas/aoc-to-markdown).
 
 ```
-SESSION_ID=$SESSION_ID python3 -m aoc_to_markdown -y $YEAR -d $DAY -o $YEAR -b main.py -i
+SESSION_ID=$(<session.cookie) python3 -m aoc_to_markdown -y $YEAR -d $DAY -o $YEAR -b main.py -i
 ```
 
 ## Stats
@@ -17,10 +17,10 @@ Thanks to [juliamarc](https://github.com/juliamarc) for idea and [based code](ht
 
 <!-- AOC TILES BEGIN -->
 <h1 align="center">
-  Advent of Code - 356/450 ⭐
+  Advent of Code - 358/450 ⭐
 </h1>
 <h1 align="center">
-  2023 - 32 ⭐
+  2023 - 34 ⭐
 </h1>
 <a href="2023/day-01/main.py">
   <img src=".aoc_tiles/tiles/2023/01.png" width="161px">
@@ -69,6 +69,9 @@ Thanks to [juliamarc](https://github.com/juliamarc) for idea and [based code](ht
 </a>
 <a href="2023/day-16/main.py">
   <img src=".aoc_tiles/tiles/2023/16.png" width="161px">
+</a>
+<a href="2023/day-17/main.py">
+  <img src=".aoc_tiles/tiles/2023/17.png" width="161px">
 </a>
 <h1 align="center">
   2022 - 42 ⭐
