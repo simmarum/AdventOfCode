@@ -1,0 +1,6 @@
+venv/
+
+session.cookie
+
+.aoc_tiles/*
+!.aoc_tiles/tiles/
