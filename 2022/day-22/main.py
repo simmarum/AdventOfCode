@@ -1,4 +1,5 @@
 import re
+import numpy as np
 
 
 def read_file() -> list:
@@ -7,19 +8,34 @@ def read_file() -> list:
 
 
 def parse_inp(inp):
-    tiles = {}
     instructions = []
+    world = []
+    start_tile = None
     for y, line in enumerate(inp):
+        world_line = []
         if not line:
             continue
         if line[0].isdigit():
             instructions = re.split(r'(L|R)', line)
+            continue
         for x, v in enumerate(line):
             if v != ' ':
-                tiles[(y, x)] = v
-    return tiles, instructions
+                if start_tile is None:
+                    start_tile = (y, x)
+            world_line.append(v)
+        world.append(world_line)
+    max_line_len = max(len(line) for line in world)
+    world = [line + [' '] * (max_line_len - len(line)) for line in world]
+    tiles = np.array(world)
+    return tiles, instructions, start_tile
 
 
+dirs = {
+    'R': (0, 1),
+    'L': (0, -1),
+    'U': (-1, 0),
+    'D': (1, 0)
+}
 lookup = {
     # R
     (0, 1): {
@@ -44,81 +60,179 @@ lookup = {
 }
 
 
-def add_pos(a, b):
-    return tuple(sum(x) for x in zip(a, b))
+def get_portal_type_1(dx):
+    # Used in example on site
+    p = {}
+    # 14 portals out of the map
+    #     1
+    # 2 3 4
+    #     5 6
+    for di in range(dx):
+        # 3->1 U->R (1->3 L->D)
+        ay, ax = 1 * dx + 0 * di + 0, 1 * dx + 1 * di + 0
+        by, bx = 0 * dx + 1 * di + 0, 2 * dx + 0 * di + 0
+        p[((ay, ax), dirs['U'])] = ((by, bx), dirs['R'])
+        p[((by, bx), dirs['L'])] = ((ay, ax), dirs['D'])
+        # 1->2 U->D (2->1 U->D)
+        ay, ax = 0 * dx + 0 * di + 0, 2 * dx + 1 * di + 0
+        by, bx = 1 * dx + 0 * di + 0, 1 * dx - 1 * di - 1
+        p[((ay, ax), dirs['U'])] = ((by, bx), dirs['D'])
+        p[((by, bx), dirs['U'])] = ((ay, ax), dirs['D'])
+        # 1->6 R->L (6->1 R->L)
+        ay, ax = 1 * dx - 1 * di - 1, 3 * dx + 0 * di - 1
+        by, bx = 2 * dx + 1 * di + 0, 4 * dx + 0 * di - 1
+        p[((ay, ax), dirs['R'])] = ((by, bx), dirs['L'])
+        p[((by, bx), dirs['R'])] = ((ay, ax), dirs['L'])
+        # 4->6 R->D (6->4 U->L)
+        ay, ax = 2 * dx - 1 * di - 1, 3 * dx + 0 * di - 1
+        by, bx = 2 * dx + 0 * di + 0, 3 * dx + 1 * di + 0
+        p[((ay, ax), dirs['R'])] = ((by, bx), dirs['D'])
+        p[((by, bx), dirs['U'])] = ((ay, ax), dirs['L'])
+        # 3->5 D->R (5->3 L->U)
+        ay, ax = 2 * dx + 0 * di - 1, 2 * dx - 1 * di - 1
+        by, bx = 2 * dx + 1 * di + 0, 2 * dx + 0 * di + 0
+        p[((ay, ax), dirs['D'])] = ((by, bx), dirs['R'])
+        p[((by, bx), dirs['L'])] = ((ay, ax), dirs['U'])
+        # 2->5 D->U (5->2 D->U)
+        ay, ax = 2 * dx + 0 * di - 1, 1 * dx - 1 * di - 1
+        by, bx = 3 * dx + 0 * di - 1, 2 * dx + 1 * di + 0
+        p[((ay, ax), dirs['D'])] = ((by, bx), dirs['U'])
+        p[((by, bx), dirs['D'])] = ((ay, ax), dirs['U'])
+        # 2->6 L->U (6->2 D->R)
+        ay, ax = 1 * dx + 1 * di + 0, 0 * dx + 0 * di + 0
+        by, bx = 3 * dx + 0 * di - 1, 4 * dx - 1 * di - 1
+        p[((ay, ax), dirs['L'])] = ((by, bx), dirs['U'])
+        p[((by, bx), dirs['D'])] = ((ay, ax), dirs['R'])
+    return p
 
 
-def print_tiles(tiles, path):
-    lookup = {
-        (0, 1): '>',
-        (0, -1): '<',
-        (1, 0): 'v',
-        (-1, 0): '^',
-    }
-    tt = [[' '] * (1 + max([t[1] for t in tiles.keys()]))
-          for _ in range(1 + max([t[0] for t in tiles.keys()]))]
-    for k, v in tiles.items():
-        tt[k[0]][k[1]] = v
-    for k, v in path:
-        tt[k[0]][k[1]] = lookup[v]
-    [print(''.join(t)) for t in tt]
+def get_portal_type_2(dx):
+    # Used in my input
+    p = {}
+    # 14 portals out of the map
+    #   1 2
+    #   3
+    # 4 5
+    # 6
+    for di in range(dx):
+        # 3->4 L->D (4->3 U->R)
+        ay, ax = 1 * dx + 1 * di + 0, 1 * dx + 0 * di + 0
+        by, bx = 2 * dx + 0 * di + 0, 0 * dx + 1 * di + 0
+        p[((ay, ax), dirs['L'])] = ((by, bx), dirs['D'])
+        p[((by, bx), dirs['U'])] = ((ay, ax), dirs['R'])
+        # 1->4 L->R (4->1 L->R)
+        ay, ax = 0 * dx + 1 * di + 0, 1 * dx + 0 * di + 0
+        by, bx = 3 * dx - 1 * di - 1, 0 * dx + 0 * di + 0
+        p[((ay, ax), dirs['L'])] = ((by, bx), dirs['R'])
+        p[((by, bx), dirs['L'])] = ((ay, ax), dirs['R'])
+        # 1->6 U->R (6->1 L->D)
+        ay, ax = 0 * dx + 0 * di + 0, 1 * dx + 1 * di + 0
+        by, bx = 3 * dx + 1 * di + 0, 0 * dx + 0 * di + 0
+        p[((ay, ax), dirs['U'])] = ((by, bx), dirs['R'])
+        p[((by, bx), dirs['L'])] = ((ay, ax), dirs['D'])
+        # 6->2 D->D (2->6 U->U)
+        ay, ax = 4 * dx + 0 * di - 1, 0 * dx + 1 * di + 0
+        by, bx = 0 * dx + 0 * di + 0, 2 * dx + 1 * di + 0
+        p[((ay, ax), dirs['D'])] = ((by, bx), dirs['D'])
+        p[((by, bx), dirs['U'])] = ((ay, ax), dirs['U'])
+        # 6->5 R->U (5->6 D->L)
+        ay, ax = 3 * dx + 1 * di + 0, 1 * dx + 0 * di - 1
+        by, bx = 3 * dx + 0 * di - 1, 1 * dx + 1 * di + 0
+        p[((ay, ax), dirs['R'])] = ((by, bx), dirs['U'])
+        p[((by, bx), dirs['D'])] = ((ay, ax), dirs['L'])
+        # 2->5 R->L (5->2 R->L)
+        ay, ax = 0 * dx + 1 * di + 0, 3 * dx + 0 * di - 1
+        by, bx = 3 * dx - 1 * di - 1, 2 * dx + 0 * di - 1
+        p[((ay, ax), dirs['R'])] = ((by, bx), dirs['L'])
+        p[((by, bx), dirs['R'])] = ((ay, ax), dirs['L'])
+        # 2->3 D->L (3->2 R->U)
+        ay, ax = 1 * dx + 0 * di - 1, 2 * dx + 1 * di + 0
+        by, bx = 1 * dx + 1 * di + 0, 2 * dx + 0 * di - 1
+        p[((ay, ax), dirs['D'])] = ((by, bx), dirs['L'])
+        p[((by, bx), dirs['R'])] = ((ay, ax), dirs['U'])
+    return p
 
 
-def part_1(inp):
-    tiles, instructions = parse_inp(inp)
-    if len(instructions) % 2 == 1:
-        instructions.append(None)
-    curr_pos = min([t for t in tiles if t[0] == 0])
+def travel_map(inp, part):
+    tiles, instructions, start_tile = parse_inp(inp)
+    if start_tile is None:
+        raise RuntimeError(f"{start_tile=} cannot be None")
+    curr_pos = start_tile
     curr_dir = (0, 1)
-    path = [(curr_pos, curr_dir)]
-    it = iter(instructions)
-    for cnt, next_dir in zip(it, it):
-        for step in range(int(cnt)):
-            next_pos = add_pos(curr_pos, curr_dir)
-            if next_pos not in tiles:
-                if curr_dir == (0, 1):
-                    next_pos = min(
-                        [t for t in tiles if t[0] == curr_pos[0]])
-                if curr_dir == (0, -1):
-                    next_pos = max(
-                        [t for t in tiles if t[0] == curr_pos[0]])
-                if curr_dir == (1, 0):
-                    next_pos = min(
-                        [t for t in tiles if t[1] == curr_pos[1]])
-                if curr_dir == (-1, 0):
-                    next_pos = max(
-                        [t for t in tiles if t[1] == curr_pos[1]])
-            if tiles[next_pos] == '#':
-                if next_dir:
-                    curr_dir = lookup[curr_dir][next_dir]
-                else:
-                    path.append((curr_pos, curr_dir))
-
+    max_y = tiles.shape[0]
+    max_x = tiles.shape[1]
+    p = {}
+    dx = None
+    if part == 2:
+        for (wy, wx) in ((3, 4), (4, 3)):
+            dy = max_y // wy
+            dx = max_x // wx
+            if dy == dx:
                 break
-            else:
-                path.append((curr_pos, curr_dir))
-                curr_pos = next_pos
         else:
-            if next_dir:
-                curr_dir = lookup[curr_dir][next_dir]
-            else:
-                path.append((curr_pos, curr_dir))
+            raise RuntimeError(
+                f"Something wrong with dimensions: {
+                    max_y=} {
+                    max_x=}")
+        p = get_portal_type_2(dx)
 
-    # print_tiles(tiles, path)
+    prev_dir = None
+    for instr in instructions:
+        if instr in 'LR':
+            curr_dir = lookup[curr_dir][instr]
+        else:
+            for step in range(int(instr)):
+                prev_dir = None
+                next_pos, next_dir = p.get((curr_pos, curr_dir), (None, None))
+                # print(f"{instr=} {curr_pos=} {
+                #       curr_dir=} {next_pos=} {next_dir=}")
+                if next_pos is None:
+                    next_pos, next_dir = (
+                        (
+                            (curr_pos[0] + curr_dir[0] + max_y) % max_y,
+                            (curr_pos[1] + curr_dir[1] + max_x) % max_x
+                        ),
+                        curr_dir
+                    )
+                else:
+                    prev_dir = curr_dir
+                if tiles[next_pos] == ' ':
+                    while tiles[next_pos] == ' ':
+                        next_pos, next_dir = (
+                            (
+                                (next_pos[0] + next_dir[0] + max_y) % max_y,
+                                (next_pos[1] + next_dir[1] + max_x) % max_x
+                            ),
+                            next_dir
+                        )
+                if tiles[next_pos] == '.':
+                    curr_pos = next_pos
+                    curr_dir = next_dir
+                    continue
+                if tiles[next_pos] == '#':
+                    # curr_dir = next_dir
+                    break
+
     col = curr_pos[1] + 1
     row = curr_pos[0] + 1
-    facing_l = {
+    curr_dir_points = {
         (0, 1): 0,
         (0, -1): 2,
         (1, 0): 1,
         (-1, 0): 3,
     }
-    facing = facing_l[curr_dir]
-    return 1000 * row + 4 * col + facing
+    final_dir = curr_dir
+    if prev_dir:
+        final_dir = prev_dir
+    return 1000 * row + 4 * col + curr_dir_points[final_dir]
+
+
+def part_1(inp):
+    return travel_map(inp, part=1)
 
 
 def part_2(inp):
-    return None
+    return travel_map(inp, part=2)
 
 
 def main():
