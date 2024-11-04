@@ -4,3 +4,5 @@ session.cookie
 
 .aoc_tiles/*
 !.aoc_tiles/tiles/
+
+*.lprof
