@@ -136,7 +136,7 @@ def _compute_res(lit_val):
             tr = f'\n({_compute_res(v[1])})'
             res += tr
         elif v[0] in (5, 6, 7):
-            tr = f'\n({calcs[v[0]].format(x=_compute_res([v[1][0]]),y=_compute_res([v[1][1]]))}),'
+            tr = f'\n({calcs[v[0]].format(x=_compute_res([v[1][0]]), y=_compute_res([v[1][1]]))}),'  # noqa
             res += tr
         elif isinstance(v[1], int):
             tr = f'\n({calcs[v[0]].format(x=v[1])}),'

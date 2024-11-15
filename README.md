@@ -17,7 +17,7 @@ Thanks to [juliamarc](https://github.com/juliamarc) for idea and [based code](ht
 
 <!-- AOC TILES BEGIN -->
 <h1 align="center">
-  Advent of Code - 400/450 ⭐
+  Advent of Code - 436/450 ⭐
 </h1>
 <h1 align="center">
   2023 - 50 ⭐
@@ -330,6 +330,63 @@ Thanks to [juliamarc](https://github.com/juliamarc) for idea and [based code](ht
 </a>
 <a href="2020/day-25/main.py">
   <img src=".aoc_tiles/tiles/2020/25.png" width="161px">
+</a>
+<h1 align="center">
+  2019 - 36 ⭐
+</h1>
+<a href="2019/day-01/main.py">
+  <img src=".aoc_tiles/tiles/2019/01.png" width="161px">
+</a>
+<a href="2019/day-02/main.py">
+  <img src=".aoc_tiles/tiles/2019/02.png" width="161px">
+</a>
+<a href="2019/day-03/main.py">
+  <img src=".aoc_tiles/tiles/2019/03.png" width="161px">
+</a>
+<a href="2019/day-04/main.py">
+  <img src=".aoc_tiles/tiles/2019/04.png" width="161px">
+</a>
+<a href="2019/day-05/main.py">
+  <img src=".aoc_tiles/tiles/2019/05.png" width="161px">
+</a>
+<a href="2019/day-06/main.py">
+  <img src=".aoc_tiles/tiles/2019/06.png" width="161px">
+</a>
+<a href="2019/day-07/main.py">
+  <img src=".aoc_tiles/tiles/2019/07.png" width="161px">
+</a>
+<a href="2019/day-08/main.py">
+  <img src=".aoc_tiles/tiles/2019/08.png" width="161px">
+</a>
+<a href="2019/day-09/main.py">
+  <img src=".aoc_tiles/tiles/2019/09.png" width="161px">
+</a>
+<a href="2019/day-10/main.py">
+  <img src=".aoc_tiles/tiles/2019/10.png" width="161px">
+</a>
+<a href="2019/day-11/main.py">
+  <img src=".aoc_tiles/tiles/2019/11.png" width="161px">
+</a>
+<a href="2019/day-12/main.py">
+  <img src=".aoc_tiles/tiles/2019/12.png" width="161px">
+</a>
+<a href="2019/day-13/main.py">
+  <img src=".aoc_tiles/tiles/2019/13.png" width="161px">
+</a>
+<a href="2019/day-14/main.py">
+  <img src=".aoc_tiles/tiles/2019/14.png" width="161px">
+</a>
+<a href="2019/day-15/main.py">
+  <img src=".aoc_tiles/tiles/2019/15.png" width="161px">
+</a>
+<a href="2019/day-16/main.py">
+  <img src=".aoc_tiles/tiles/2019/16.png" width="161px">
+</a>
+<a href="2019/day-17/main.py">
+  <img src=".aoc_tiles/tiles/2019/17.png" width="161px">
+</a>
+<a href="2019/day-18/main.py">
+  <img src=".aoc_tiles/tiles/2019/18.png" width="161px">
 </a>
 <h1 align="center">
   2018 - 50 ⭐

@@ -53,7 +53,8 @@ def part_1(inp):
     # 26 # setr 1 7 3               D = 256                             ip = 27
     # 27 # seti 7 0 4               ip = 7  // goto line 8              ip = 8
 
-    # 28 # eqrr 5 0 1               B = F == A // part one we need to be sure that this is true - so we can return whatever is in F
+    # 28 # eqrr 5 0 1               B = F == A // part one we need to be sure that this is true
+    #                                               - so we can return whatever is in F
     # 29 # addr 1 4 4               ip = ip + A
     # 30 # seti 5 9 4               ip = 5                              ip = 6
     _, b, _, d, _, f = 0, 0, 0, 0, 0, 0

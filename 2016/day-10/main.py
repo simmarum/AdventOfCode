@@ -30,7 +30,7 @@ def simulate_bots(inp, part_2):
         for bot_num, bot_chips in dict(bots).items():
             if len(bot_chips) == 2:
                 min_c, max_c = sorted(bot_chips)
-                del(bots[bot_num])
+                del bots[bot_num]
                 if (min_c == search_min) and (max_c == search_max):
                     search_bot = bot_num
                 if instructions_move[bot_num][0] == 'bot':

@@ -13,7 +13,7 @@ def part_1(inp):
     ll = len(all_inst)
     while True:
         if i >= ll:
-            return"Reach end input!"
+            return "Reach end input!"
         if all_inst[i][2] is True:
             break
         if all_inst[i][0] == "nop":

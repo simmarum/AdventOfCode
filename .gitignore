@@ -6,3 +6,5 @@ session.cookie
 !.aoc_tiles/tiles/
 
 *.lprof
+
+*.log.pkl

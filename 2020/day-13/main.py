@@ -48,7 +48,7 @@ def _check_nww(s):
     if x == y:
         return y
     else:
-        raise("Numbers are not relatively first!")
+        raise RuntimeError("Numbers are not relatively first!")
 
 
 def part_2(inp):

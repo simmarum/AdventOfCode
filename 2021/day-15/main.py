@@ -18,7 +18,7 @@ def part_1(inp):
     heapq.heappush(search_points, start_point)
     path_risks = {(0, 0): 0}
 
-    while(len(search_points) > 0):
+    while (len(search_points) > 0):
         act_point = heapq.heappop(search_points)
         if (act_point[0] == end_point[0]) and (act_point[1] == end_point[1]):
             break
@@ -58,7 +58,7 @@ def part_2(inp):
     heapq.heappush(search_points, start_point)
     path_risks = {(0, 0): 0}
 
-    while(len(search_points) > 0):
+    while (len(search_points) > 0):
         act_point = heapq.heappop(search_points)
         if (act_point[0] == end_point[0]) and (act_point[1] == end_point[1]):
             break

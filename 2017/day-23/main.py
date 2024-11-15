@@ -64,7 +64,7 @@ def part_2(inp):
             if f == 0:
                 h = h + 1
             if b == c:
-                return(h)
+                return h
             b = b + 17
             break
 
