@@ -154,6 +154,9 @@ In this arrangement, it takes `11` steps to collect all of the objects at the fo
 
 In your situation, what is the *minimum number of steps* required to bring all of the objects to the fourth floor?
 
+
+Your puzzle answer was 47.
+
 ## --- Part Two ---
 
 You step into the cleanroom separating the lobby from the isolated area and put on the hazmat suit.
@@ -174,3 +177,5 @@ These work just like the other generators and microchips. You'll have to get the
 
 What is the *minimum number of steps* required to bring all of the objects, including these four new ones, to the fourth floor?
 
+
+Your puzzle answer was 71.

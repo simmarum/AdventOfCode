@@ -74,6 +74,9 @@ In the above example, an illegal `)` was found twice (`2*3 = 6` points), an ille
 
 Find the first illegal character in each corrupted line of the navigation subsystem. *What is the total syntax error score for those errors?*
 
+
+Your puzzle answer was 323691.
+
 ## --- Part Two ---
 
 Now, discard the corrupted lines.  The remaining lines are *incomplete*.
@@ -140,3 +143,5 @@ Autocomplete tools are an odd bunch: the winner is found by *sorting* all of the
 
 Find the completion string for each incomplete line, score the completion strings, and sort the scores. *What is the middle score?*
 
+
+Your puzzle answer was 2858785164.

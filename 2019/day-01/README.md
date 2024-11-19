@@ -26,6 +26,9 @@ The Fuel Counter-Upper needs to know the total fuel requirement.  To find it, in
 
 *What is the sum of the fuel requirements* for all of the modules on your spacecraft?
 
+
+Your puzzle answer was 3369286.
+
 ## --- Part Two ---
 
 During the second Go / No Go poll, the Elf in charge of the Rocket Equation Double-Checker stops the launch sequence.  Apparently, you forgot to include additional fuel for the fuel you just added.
@@ -44,3 +47,5 @@ So, for each module mass, calculate its fuel and add it to the total.  Then, tre
 
 *What is the sum of the fuel requirements* for all of the modules on your spacecraft when also taking into account the mass of the added fuel? (Calculate the fuel requirements for each module separately, then add them all up at the end.)
 
+
+Your puzzle answer was 5051054.

@@ -118,6 +118,9 @@ So, the lowest location number in this example is `35`.
 
 *What is the lowest location number that corresponds to any of the initial seed numbers?*
 
+
+Your puzzle answer was 174137457.
+
 ## --- Part Two ---
 
 Everyone will starve if you only plant such a small number of seeds. Re-reading the almanac, it looks like the `seeds:` line actually describes *ranges of seed numbers*.
@@ -134,3 +137,5 @@ In the above example, the lowest location number can be obtained from seed numbe
 
 Consider all of the initial seed numbers listed in the ranges on the first line of the almanac. *What is the lowest location number that corresponds to any of the initial seed numbers?*
 
+
+Your puzzle answer was 1493866.

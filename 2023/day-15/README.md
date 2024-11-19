@@ -102,6 +102,9 @@ In this example, the sum of these results is `1320`. Unfortunately, the reindeer
 
 Run the HASH algorithm on each step in the initialization sequence. *What is the sum of the results?* (The initialization sequence is one long line; be careful when copy-pasting it.)
 
+
+Your puzzle answer was 519041.
+
 ## --- Part Two ---
 
 You convince the reindeer to bring you the page; the page confirms that your HASH algorithm is working.
@@ -213,3 +216,5 @@ So, the above example ends up with a total focusing power of `145`.
 
 With the help of an over-enthusiastic reindeer in a hard hat, follow the initialization sequence. *What is the focusing power of the resulting lens configuration?*
 
+
+Your puzzle answer was 260530.

@@ -58,6 +58,9 @@ This path never moves more than three consecutive blocks in the same direction a
 
 Directing the crucible from the lava pool to the machine parts factory, but not moving more than three consecutive blocks in the same direction, *what is the least heat loss it can incur?*
 
+
+Your puzzle answer was 785.
+
 ## --- Part Two ---
 
 The crucibles of lava simply aren't large enough to provide an adequate supply of lava to the machine parts factory. Instead, the Elves are going to upgrade to *ultra crucibles*.
@@ -113,3 +116,5 @@ This route causes the ultra crucible to incur the minimum possible heat loss of 
 
 Directing the *ultra crucible* from the lava pool to the machine parts factory, *what is the least heat loss it can incur?*
 
+
+Your puzzle answer was 922.

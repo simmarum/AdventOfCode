@@ -28,6 +28,9 @@ The code takes a value (via register `a`) that describes the signal to generate,
 
 *What is the lowest positive integer* that can be used to initialize register `a` and cause the code to output a clock signal of `0`, `1`, `0`, `1`... repeating forever?
 
+
+Your puzzle answer was 158.
+
 ## --- Part Two ---
 
 The antenna is ready. Now, all you need is the *fifty stars* required to generate the signal for the sleigh, but you don't have enough.

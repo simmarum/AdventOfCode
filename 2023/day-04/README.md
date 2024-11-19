@@ -44,6 +44,9 @@ So, in this example, the Elf's pile of scratchcards is worth `13` points.
 
 Take a seat in the large pile of colorful cards. *How many points are they worth in total?*
 
+
+Your puzzle answer was 18619.
+
 ## --- Part Two ---
 
 Just as you're about to report your findings to the Elf, one of you realizes that the rules have actually been printed on the back of every card this whole time.
@@ -86,3 +89,5 @@ Once all of the originals and copies have been processed, you end up with `1` in
 
 Process all of the original and copied scratchcards until no more scratchcards are won. Including the original set of scratchcards, *how many total scratchcards do you end up with?*
 
+
+Your puzzle answer was 8063216.

@@ -322,6 +322,9 @@ Outcome: 20 * 937 = 18740
 
 *What is the outcome* of the combat described in your puzzle input?
 
+
+Your puzzle answer was 181952.
+
 ## --- Part Two ---
 
 According to your calculations, the Elves are going to lose badly. Surely, you won't mess up the timeline too much if you give them *just a little advanced technology*, right?
@@ -421,3 +424,5 @@ Outcome: 30 * 38 = 1140
 
 After increasing the Elves' attack power until it is just barely enough for them to win without any Elves dying, *what is the outcome* of the combat described in your puzzle input?
 
+
+Your puzzle answer was 47296.

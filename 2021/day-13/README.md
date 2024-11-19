@@ -130,9 +130,14 @@ The transparent paper is pretty big, so for now, focus on just completing the fi
 
 *How many dots are visible after completing just the first fold instruction on your transparent paper?*
 
+
+Your puzzle answer was 942.
+
 ## --- Part Two ---
 
 *Finish folding* the transparent paper according to the instructions. The manual says the code is always *eight capital letters*.
 
 *What code do you use to activate the infrared thermal imaging camera system?*
 
+
+Your puzzle answer was JZGUAPRB.

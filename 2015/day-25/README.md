@@ -50,6 +50,9 @@ So, to find the second code (which ends up in row `2`, column `1`), start with t
 
 Santa looks nervous.  Your puzzle input contains the message on the machine's console.  *What code do you give the machine?*
 
+
+Your puzzle answer was 9132360.
+
 ## --- Part Two ---
 
 The machine springs to life, then falls silent again.  It beeps.  "Insufficient fuel", the console reads.  "*Fifty stars* are required before proceeding.  *One star* is available."

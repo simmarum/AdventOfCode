@@ -62,6 +62,9 @@ Your goal is to determine *the number of messages that completely match rule `0`
 
 *How many messages completely match rule `0`?*
 
+
+Your puzzle answer was 184.
+
 ## --- Part Two ---
 
 As you look over the list of messages, you realize your matching rules aren't quite right. To fix them, completely replace rules `8: 42` and `11: 42 31` with the following:
@@ -163,3 +166,5 @@ However, after updating rules `8` and `11`, a total of *`12`* messages match:
 
 *After updating rules `8` and `11`, how many messages completely match rule `0`?*
 
+
+Your puzzle answer was 389.

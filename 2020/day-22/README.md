@@ -116,6 +116,9 @@ So, once the game ends, the winning player's score is *`306`*.
 
 Play the small crab in a game of Combat using the two decks you just dealt. *What is the winning player's score?*
 
+
+Your puzzle answer was 33561.
+
 ## --- Part Two ---
 
 You lost to the small crab! Fortunately, crabs aren't very good at recursion. To defend your honor as a Raft Captain, you challenge the small crab to a game of **Recursive* Combat*.
@@ -396,3 +399,5 @@ After the game, the winning player's score is calculated from the cards they hav
 
 Defend your honor as Raft Captain by playing the small crab in a game of Recursive Combat using the same two decks as before. *What is the winning player's score?*
 
+
+Your puzzle answer was 34594.

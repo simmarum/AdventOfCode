@@ -72,6 +72,9 @@ This hike contains `94` steps. (The other possible hikes you could have taken we
 
 Find the longest hike you can take through the hiking trails listed on your map. *How many steps long is the longest hike?*
 
+
+Your puzzle answer was 2106.
+
 ## --- Part Two ---
 
 As you reach the trailhead, you realize that the ground isn't as slippery as you expected; you'll have *no problem* climbing up the steep slopes.
@@ -109,3 +112,5 @@ In the example above, this increases the longest hike to `154` steps:
 
 Find the longest hike you can take through the surprisingly dry hiking trails listed on your map. *How many steps long is the longest hike?*
 
+
+Your puzzle answer was 6350.

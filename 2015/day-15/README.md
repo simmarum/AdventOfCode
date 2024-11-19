@@ -42,6 +42,9 @@ Multiplying these together (`68 * 80 * 152 * 76`, ignoring `calories` for now) r
 
 Given the ingredients in your kitchen and their properties, what is the *total score* of the highest-scoring cookie you can make?
 
+
+Your puzzle answer was 222870.
+
 ## --- Part Two ---
 
 Your cookie recipe becomes wildly popular!  Someone asks if you can make another recipe that has exactly `500` calories per cookie (so they can use it as a meal replacement).  Keep the rest of your award-winning process the same (100 teaspoons, same ingredients, same scoring system).
@@ -50,3 +53,5 @@ For example, given the ingredients above, if you had instead selected `40` teasp
 
 Given the ingredients in your kitchen and their properties, what is the *total score* of the highest-scoring cookie you can make with a calorie total of `500`?
 
+
+Your puzzle answer was 117936.

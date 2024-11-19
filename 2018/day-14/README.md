@@ -48,6 +48,9 @@ The Elves think their skill will improve after making a few recipes (your puzzle
 
 *What are the scores of the ten recipes immediately after the number of recipes in your puzzle input?*
 
+
+Your puzzle answer was 4138145721.
+
 ## --- Part Two ---
 
 As it turns out, you got the Elves' plan backwards.  They actually want to know how many recipes appear on the scoreboard to the left of the first recipes whose scores are the digits from your puzzle input.
@@ -64,3 +67,5 @@ As it turns out, you got the Elves' plan backwards.  They actually want to know 
 
 *How many recipes appear on the scoreboard to the left of the score sequence in your puzzle input?*
 
+
+Your puzzle answer was 20276284.

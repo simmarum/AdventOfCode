@@ -37,6 +37,9 @@ The machine replaces without regard for the surrounding characters.  For example
 
 Your puzzle input describes all of the possible replacements and, at the bottom, the medicine molecule for which you need to calibrate the machine.  *How many distinct molecules can be created* after all the different ways you can do one replacement on the medicine molecule?
 
+
+Your puzzle answer was 509.
+
 ## --- Part Two ---
 
 Now that the machine is calibrated, you're ready to begin molecule fabrication.
@@ -68,3 +71,5 @@ So, you could make `HOH` after *`3` steps*.  Santa's favorite molecule, `HOHOHO`
 
 How long will it take to make the medicine?  Given the available *replacements* and the *medicine molecule* in your puzzle input, what is the *fewest number of steps* to go from `e` to the medicine molecule?
 
+
+Your puzzle answer was 195.

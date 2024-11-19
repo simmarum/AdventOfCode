@@ -51,6 +51,9 @@ This process continues until `root` yells a number: `152`.
 
 However, your actual situation involves *considerably more monkeys*. *What number will the monkey named `root` yell?*
 
+
+Your puzzle answer was 142707821472432.
+
 ## --- Part Two ---
 
 Due to some kind of monkey-elephant-human mistranslation, you seem to have misunderstood a few key details about the riddle.
@@ -63,3 +66,5 @@ In the above example, the number you need to yell to pass `root`'s equality test
 
 *What number do you yell to pass `root`'s equality test?*
 
+
+Your puzzle answer was 3587647562851.

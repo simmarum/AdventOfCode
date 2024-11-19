@@ -174,6 +174,9 @@ Determine the *quality level* of each blueprint by *multiplying that blueprint's
 
 Determine the quality level of each blueprint using the largest number of geodes it could produce in 24 minutes. *What do you get if you add up the quality level of all of the blueprints in your list?*
 
+
+Your puzzle answer was 1192.
+
 ## --- Part Two ---
 
 While you were choosing the best blueprint, the elephants found some food on their own, so you're not in as much of a hurry; you figure you probably have *32 minutes* before the wind changes direction again and you'll need to get out of range of the erupting volcano.
@@ -386,3 +389,5 @@ You *no longer have enough blueprints to worry about quality levels*. Instead, f
 
 Don't worry about quality levels; instead, just determine the largest number of geodes you could open using each of the first three blueprints. *What do you get if you multiply these numbers together?*
 
+
+Your puzzle answer was 14725.

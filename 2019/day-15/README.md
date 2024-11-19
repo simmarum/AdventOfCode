@@ -102,6 +102,9 @@ Now, because of the reply of `2`, you know you've found the *oxygen system*! In 
 
 *What is the fewest number of movement commands* required to move the repair droid from its starting position to the location of the oxygen system?
 
+
+Your puzzle answer was 204.
+
 ## --- Part Two ---
 
 You quickly repair the oxygen system; oxygen gradually fills the area.
@@ -167,3 +170,5 @@ So, in this example, all locations contain oxygen after `4` minutes.
 
 Use the repair droid to get a complete map of the area. *How many minutes will it take to fill with oxygen?*
 
+
+Your puzzle answer was 340.

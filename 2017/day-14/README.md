@@ -30,6 +30,9 @@ In this example, `8108` squares are used across the entire 128x128 grid.
 
 Given your actual key string, *how many squares are used*?
 
+
+Your puzzle answer was 8190.
+
 ## --- Part Two ---
 
 Now, *all the defragmenter needs to know* is the number of *regions*. A region is a group of *used* squares that are all *adjacent*, not including diagonals. Every used square is in exactly one region: lone used squares form their own isolated regions, while several adjacent squares all count as a single region.
@@ -54,3 +57,5 @@ Of particular interest is the region marked `8`; while it does not appear contig
 
 *How many regions* are present given your key string?
 
+
+Your puzzle answer was 1134.

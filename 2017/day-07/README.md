@@ -52,6 +52,9 @@ In this example, `tknk` is at the bottom of the tower (the *bottom program*), an
 
 Before you're ready to help them, you need to make sure your information is correct.  *What is the name of the bottom program?*
 
+
+Your puzzle answer was svugo.
+
 ## --- Part Two ---
 
 The programs explain the situation: they can't get down.  Rather, they *could* get down, if they weren't expending all of their energy trying to keep the tower balanced. Apparently, one program has the *wrong weight*, and until it's fixed, they're stuck here.
@@ -74,3 +77,5 @@ As you can see, `tknk`'s disc is unbalanced: `ugml`'s stack is heavier than the 
 
 Given that exactly one program is the wrong weight, *what would its weight need to be* to balance the entire tower?
 
+
+Your puzzle answer was 1152.

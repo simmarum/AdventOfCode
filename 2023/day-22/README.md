@@ -154,6 +154,9 @@ So, in this example, `5` bricks can be safely disintegrated.
 
 Figure how the blocks will settle based on the snapshot. Once they've settled, consider disintegrating a single brick; *how many bricks could be safely chosen as the one to get disintegrated?*
 
+
+Your puzzle answer was 389.
+
 ## --- Part Two ---
 
 Disintegrating bricks one at a time isn't going to be fast enough. While it might sound dangerous, what you really need is a *chain reaction*.
@@ -172,3 +175,5 @@ Disintegrating any other brick would cause *no other bricks* to fall. So, in thi
 
 For each brick, determine how many *other bricks* would fall if that brick were disintegrated. *What is the sum of the number of other bricks that would fall?*
 
+
+Your puzzle answer was 70609.

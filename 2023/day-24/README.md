@@ -74,6 +74,9 @@ However, you'll need to search a much larger test area if you want to see if any
 
 Considering only the X and Y axes, check all pairs of hailstones' future paths for intersections. *How many of these intersections occur within the test area?*
 
+
+Your puzzle answer was 20361.
+
 ## --- Part Two ---
 
 Upon further analysis, it doesn't seem like *any* hailstones will naturally collide. It's up to you to fix that!
@@ -115,3 +118,5 @@ So, at time `0`, the rock needs to be at X position `24`, Y position `13`, and Z
 
 Determine the exact position and velocity the rock needs to have at time `0` so that it perfectly collides with every hailstone. *What do you get if you add up the X, Y, and Z coordinates of that initial position?*
 
+
+Your puzzle answer was 558415252330828.

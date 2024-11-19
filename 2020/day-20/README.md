@@ -174,6 +174,9 @@ To check that you've assembled the image correctly, multiply the IDs of the four
 
 Assemble the tiles into an image. *What do you get if you multiply together the IDs of the four corner tiles?*
 
+
+Your puzzle answer was 66020135789767.
+
 ## --- Part Two ---
 
 Now, you're ready to *check the image for sea monsters*.
@@ -285,3 +288,5 @@ Determine how rough the waters are in the sea monsters' habitat by counting the 
 
 *How many `#` are not part of a sea monster?*
 
+
+Your puzzle answer was 1537.

@@ -69,6 +69,9 @@ The CPU can confirm that the Turing machine is working by taking a *diagnostic c
 
 Recreate the Turing machine and save the computer! *What is the diagnostic checksum* it produces once it's working again?
 
+
+Your puzzle answer was 5593.
+
 ## --- Part Two ---
 
 The Turing machine, and soon the entire computer, springs back to life.  A console glows dimly nearby, awaiting your command.

@@ -73,6 +73,9 @@ Ultimately, three parts are *accepted*. Adding up the `x`, `m`, `a`, and `s` rat
 
 Sort through all of the parts you've been given; *what do you get if you add together all of the rating numbers for all of the parts that ultimately get accepted?*
 
+
+Your puzzle answer was 476889.
+
 ## --- Part Two ---
 
 Even with your help, the sorting process *still* isn't fast enough.
@@ -85,3 +88,5 @@ In the above example, there are `167409079868000` distinct combinations of ratin
 
 Consider only your list of workflows; the list of part ratings that the Elves wanted you to sort is no longer relevant. *How many distinct combinations of ratings will be accepted by the Elves' workflows?*
 
+
+Your puzzle answer was 132380153677887.

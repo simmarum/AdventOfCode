@@ -60,6 +60,9 @@ In this example, the areas of coordinates A, B, C, and F are infinite - while no
 
 *What is the size of the largest area* that isn't infinite?
 
+
+Your puzzle answer was 3722.
+
 ## --- Part Two ---
 
 On the other hand, *if the coordinates are safe*, maybe the best you can do is try to find a *region* near as many coordinates as possible.
@@ -106,3 +109,5 @@ Your actual region will need to be much larger than this example, though, instea
 
 *What is the size of the region containing all locations which have a total distance to all given coordinates of less than 10000?*
 
+
+Your puzzle answer was 44634.

@@ -139,6 +139,9 @@ Here are the distances for each tile on that loop:
 
 Find the single giant loop starting at `S`. *How many steps along the loop does it take to get from the starting position to the point farthest from the starting position?*
 
+
+Your puzzle answer was 6599.
+
 ## --- Part Two ---
 
 You quickly reach the farthest point of the loop, but the animal never emerges. Maybe its nest is *within the area enclosed by the loop*?
@@ -260,3 +263,5 @@ In this last example, `10` tiles are enclosed by the loop.
 
 Figure out whether you have time to search for the nest by calculating the area within the loop. *How many tiles are enclosed by the loop?*
 
+
+Your puzzle answer was 477.

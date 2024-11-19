@@ -53,6 +53,9 @@ In this example, in total, `7` nanobots are in range of the nanobot with the lar
 
 Find the nanobot with the largest signal radius.  *How many nanobots are in range* of its signals?
 
+
+Your puzzle answer was 253.
+
 ## --- Part Two ---
 
 Now, you just need to figure out where to position yourself so that you're actually teleported when the nanobots activate.
@@ -75,3 +78,5 @@ Many coordinates are in range of some of the nanobots in this formation.  Howeve
 
 Find the coordinates that are in range of the largest number of nanobots. *What is the shortest manhattan distance between any of those points and `0,0,0`?*
 
+
+Your puzzle answer was 108618801.

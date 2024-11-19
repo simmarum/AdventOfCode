@@ -88,6 +88,9 @@ In the above example, the final row is `6`, the final column is `8`, and the fin
 
 Follow the path given in the monkeys' notes. *What is the final password?*
 
+
+Your puzzle answer was 36518.
+
 ## --- Part Two ---
 
 As you reach the force field, you think you hear some Elves in the distance. Perhaps they've already arrived?
@@ -172,3 +175,5 @@ The final password is still calculated from your final position and facing from 
 
 Fold the map into a cube, *then* follow the path given in the monkeys' notes. *What is the final password?*
 
+
+Your puzzle answer was 143208.

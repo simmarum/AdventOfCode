@@ -121,6 +121,9 @@ What are the indices of the pairs that are already *in the right order*? (The fi
 
 Determine which pairs of packets are already in the right order. *What is the sum of the indices of those pairs?*
 
+
+Your puzzle answer was 6568.
+
 ## --- Part Two ---
 
 Now, you just need to put *all* of the packets in the right order. Disregard the blank lines in your list of received packets.
@@ -163,3 +166,5 @@ Afterward, locate the divider packets. To find the *decoder key* for this distre
 
 Organize all of the packets into the correct order. *What is the decoder key for the distress signal?*
 
+
+Your puzzle answer was 19493.

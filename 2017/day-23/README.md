@@ -20,6 +20,9 @@ The coprocessor is currently set to some kind of *debug mode*, which allows for 
 
 If you run the program (your puzzle input), *how many times is the `mul` instruction invoked?*
 
+
+Your puzzle answer was 9409.
+
 ## --- Part Two ---
 
 Now, it's time to fix the problem.
@@ -32,3 +35,5 @@ The coprocessor's ultimate goal is to determine the final value left in register
 
 After setting register `a` to `1`, if the program were to run to completion, *what value would be left in register `h`?*
 
+
+Your puzzle answer was 913.

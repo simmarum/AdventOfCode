@@ -29,6 +29,9 @@ You watch the dance for a while and record their dance moves (your puzzle input)
 
 
 
+
+Your puzzle answer was bkgcdefiholnpmja.
+
 ## --- Part Two ---
 
 Now that you're starting to get a feel for the dance moves, you turn your attention to *the dance as a whole*.
@@ -47,3 +50,5 @@ In the example above, their second dance would *begin* with the order `baedc`, a
 
 *In what order are the programs standing* after their billion dances?
 
+
+Your puzzle answer was knmdfoijcbpghlea.

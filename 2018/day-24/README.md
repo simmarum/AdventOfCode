@@ -198,6 +198,9 @@ In the example above, the winning army ends up with `782 + 4434 = 5216` units.
 
 You scan the reindeer's condition (your puzzle input); the white-bearded man looks nervous.  As it stands now, *how many units would the winning army have*?
 
+
+Your puzzle answer was 15919.
+
 ## --- Part Two ---
 
 Things aren't looking good for the reindeer. The man asks whether more milk and cookies would help you think.
@@ -373,3 +376,5 @@ You don't even know *how* you could boost the reindeer's immune system or what e
 
 *How many units does the immune system have left* after getting the smallest boost it needs to win?
 
+
+Your puzzle answer was 354.

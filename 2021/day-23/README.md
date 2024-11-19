@@ -132,6 +132,9 @@ Finally, the last Amber amphipod moves into its room, using `8` energy:
 
 *What is the least energy required to organize the amphipods?*
 
+
+Your puzzle answer was 14148.
+
 ## --- Part Two ---
 
 As you prepare to give the amphipods your solution, you notice that the diagram they handed you was actually folded up. As you unfold it, you discover an extra part of the diagram.
@@ -369,3 +372,5 @@ In this updated example, the least energy required to organize these amphipods i
 
 Using the initial configuration from the full diagram, *what is the least energy required to organize the amphipods?*
 
+
+Your puzzle answer was 43814.

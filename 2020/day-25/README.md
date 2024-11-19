@@ -48,6 +48,9 @@ At this point, you can use either device's loop size with the other device's pub
 
 *What encryption key is the handshake trying to establish?*
 
+
+Your puzzle answer was 16311885.
+
 ## --- Part Two ---
 
 *The light turns green and the door unlocks.* As you collapse onto the bed in your room, your pager goes off!

@@ -24,6 +24,9 @@ For example:
 
 What is the *decompressed length* of the file (your puzzle input)? Don't count whitespace.
 
+
+Your puzzle answer was 97714.
+
 ## --- Part Two ---
 
 Apparently, the file actually uses *version two* of the format.
@@ -46,3 +49,5 @@ Unfortunately, the computer you brought probably doesn't have enough memory to a
 
 What is the *decompressed length* of the file using this improved format?
 
+
+Your puzzle answer was 10762972461.

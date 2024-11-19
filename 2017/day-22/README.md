@@ -120,6 +120,9 @@ Given your actual map, after `10000` bursts of activity, *how many bursts cause 
 
 
 
+
+Your puzzle answer was 5565.
+
 ## --- Part Two ---
 
 As you go to remove the virus from the infected nodes, it *evolves* to resist your attempt.
@@ -249,3 +252,5 @@ Of the first `100` bursts, `26` will result in *infection*. Unfortunately, anoth
 
 Given your actual map, after `10000000` bursts of activity, *how many bursts cause a node to become infected*? (Do not count nodes that begin infected.)
 
+
+Your puzzle answer was 2511978.

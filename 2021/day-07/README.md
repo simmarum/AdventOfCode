@@ -44,6 +44,9 @@ This costs a total of `37` fuel. This is the cheapest possible outcome; more exp
 
 Determine the horizontal position that the crabs can align to using the least fuel possible. *How much fuel must they spend to align to that position?*
 
+
+Your puzzle answer was 357353.
+
 ## --- Part Two ---
 
 The crabs don't seem interested in your proposed solution. Perhaps you misunderstand crab engineering?
@@ -78,3 +81,5 @@ This costs a total of `168` fuel. This is the new cheapest possible outcome; the
 
 Determine the horizontal position that the crabs can align to using the least fuel possible so they can make you an escape route! *How much fuel must they spend to align to that position?*
 
+
+Your puzzle answer was 104822130.

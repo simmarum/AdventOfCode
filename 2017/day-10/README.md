@@ -63,6 +63,9 @@ In this example, the first two numbers in the list end up being `3` and `4`; to 
 
 However, you should instead use the standard list size of `256` (with values `0` to `255`) and the sequence of *lengths* in your puzzle input. Once this process is complete, *what is the result of multiplying the first two numbers in the list*?
 
+
+Your puzzle answer was 11375.
+
 ## --- Part Two ---
 
 The logic you've constructed forms a single *round* of the *Knot Hash* algorithm; running the full thing requires many of these rounds. Some input and output processing is also required.
@@ -97,3 +100,5 @@ Here are some example hashes:
 Treating your puzzle input as a string of ASCII characters, *what is the Knot Hash of your puzzle input?* Ignore any leading or trailing whitespace you might encounter.
 
 
+
+Your puzzle answer was e0387e2ad112b7c2ef344e44885fe4d8.

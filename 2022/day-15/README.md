@@ -111,6 +111,9 @@ In this example, in the row where `y=10`, there are `26` positions where a beaco
 
 Consult the report from the sensors you just deployed. *In the row where `y=2000000`, how many positions cannot contain a beacon?*
 
+
+Your puzzle answer was 5100463.
+
 ## --- Part Two ---
 
 Your handheld device indicates that the distress signal is coming from a beacon nearby. The distress beacon is not detected by any sensor, but the distress beacon must have `x` and `y` coordinates each no lower than `0` and no larger than `4000000`.
@@ -121,3 +124,5 @@ In the example above, the search space is smaller: instead, the `x` and `y` coor
 
 Find the only possible position for the distress beacon. *What is its tuning frequency?*
 
+
+Your puzzle answer was 11557863040754.

@@ -14,6 +14,9 @@ For example:
 
 All numbers in the elves' list are in *feet*.  How many total *square feet of wrapping paper* should they order?
 
+
+Your puzzle answer was 1586300.
+
 ## --- Part Two ---
 
 The elves are also running low on ribbon.  Ribbon is all the same width, so they only have to worry about the length they need to order, which they would again like to be exact.
@@ -30,3 +33,5 @@ For example:
 
 How many total *feet of ribbon* should they order?
 
+
+Your puzzle answer was 3737498.

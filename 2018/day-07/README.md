@@ -52,6 +52,9 @@ So, in this example, the correct order is *`CABDFE`*.
 
 *In what order should the steps in your instructions be completed?*
 
+
+Your puzzle answer was HEGMPOAWBFCDITVXYZRKUQNSLJ.
+
 ## --- Part Two ---
 
 As you're about to begin construction, four of the Elves offer to help.  "The sun will set soon; it'll go faster if we work together."  Now, you need to account for multiple people working on steps simultaneously. If multiple steps are available, workers should still begin them in alphabetical order.
@@ -89,3 +92,5 @@ In this example, it would take *15* seconds for two workers to complete these st
 
 With *5* workers and the *60+ second* step durations described above, *how long will it take to complete all of the steps?*
 
+
+Your puzzle answer was 1226.

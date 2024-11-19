@@ -97,6 +97,9 @@ Analyze your OASIS report and extrapolate the next value for each history. *What
 
 
 
+
+Your puzzle answer was 1916822650.
+
 ## --- Part Two ---
 
 Of course, it would be nice to have *even more history* included in your report. Surely it's safe to just *extrapolate backwards* as well, right?
@@ -120,3 +123,5 @@ Doing this for the remaining example data above results in previous values of `-
 
 Analyze your OASIS report again, this time extrapolating the *previous* value for each history. *What is the sum of these extrapolated values?*
 
+
+Your puzzle answer was 966.

@@ -232,6 +232,9 @@ In this region, the number of empty ground tiles is `110`.
 
 Simulate the Elves' process and find the smallest rectangle that contains the Elves after 10 rounds. *How many empty ground tiles does that rectangle contain?*
 
+
+Your puzzle answer was 3877.
+
 ## --- Part Two ---
 
 It seems you're on the right track. Finish simulating the process and figure out where the Elves need to go. How many rounds did you save them?
@@ -256,3 +259,5 @@ In the example above, the *first round where no Elf moved* was round `20`:
 
 Figure out where the Elves need to go. *What is the number of the first round where no Elf moves?*
 
+
+Your puzzle answer was 982.

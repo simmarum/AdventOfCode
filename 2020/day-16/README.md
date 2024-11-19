@@ -46,6 +46,9 @@ It doesn't matter which position corresponds to which field; you can identify in
 
 Consider the validity of the *nearby tickets* you scanned. *What is your ticket scanning error rate?*
 
+
+Your puzzle answer was 23954.
+
 ## --- Part Two ---
 
 Now that you've identified which tickets contain invalid values, *discard those tickets entirely*. Use the remaining valid tickets to determine which field is which.
@@ -73,3 +76,5 @@ Based on the *nearby tickets* in the above example, the first position must be `
 
 Once you work out which field is which, look for the six fields on *your ticket* that start with the word `departure`. *What do you get if you multiply those six values together?*
 
+
+Your puzzle answer was 453459307723.

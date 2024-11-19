@@ -44,6 +44,9 @@ Perhaps, if you can identify the value that will ultimately be *after* the last 
 
 *What is the value after `2017`* in your completed circular buffer?
 
+
+Your puzzle answer was 204.
+
 ## --- Part Two ---
 
 The spinlock does not short-circuit.  Instead, it gets *more* angry. At least, you assume that's what happened; it's spinning significantly faster than it was a moment ago.
@@ -56,3 +59,5 @@ The bad news is that while you were determining this, the spinlock has just fini
 
 *What is the value after `0`* the moment `50000000` is inserted?
 
+
+Your puzzle answer was 28954211.

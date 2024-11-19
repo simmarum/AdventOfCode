@@ -28,6 +28,9 @@ For example:
 
 How many strings are nice?
 
+
+Your puzzle answer was 255.
+
 ## --- Part Two ---
 
 Realizing the error of his ways, Santa has switched to a better model of determining whether a string is naughty or nice.  None of the old rules apply, as they are all clearly ridiculous.
@@ -54,3 +57,5 @@ For example:
 
 How many strings are nice under these new rules?
 
+
+Your puzzle answer was 55.

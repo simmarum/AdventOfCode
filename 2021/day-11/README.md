@@ -314,6 +314,9 @@ After 100 steps, there have been a total of `1656` flashes.
 
 Given the starting energy levels of the dumbo octopuses in your cavern, simulate 100 steps. *How many total flashes are there after 100 steps?*
 
+
+Your puzzle answer was 1705.
+
 ## --- Part Two ---
 
 It seems like the individual flashes aren't bright enough to navigate. However, you might have a better option: the flashes seem to be *synchronizing*!
@@ -361,3 +364,5 @@ After step 195:
 
 If you can calculate the exact moments when the octopuses will all flash simultaneously, you should be able to navigate through the cavern. *What is the first step during which all octopuses flash?*
 
+
+Your puzzle answer was 265.

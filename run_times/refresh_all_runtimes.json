@@ -1,0 +1,446 @@
+{
+    "../2015/day-01/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731937769.618863,
+            "elapsed_time_s": "000.061068"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944243.607328,
+            "elapsed_time_s": "000.074258"
+        }
+    },
+    "../2015/day-02/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731937791.568093,
+            "elapsed_time_s": "000.076099"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944243.74752,
+            "elapsed_time_s": "000.126670"
+        }
+    },
+    "../2015/day-03/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731937791.657274,
+            "elapsed_time_s": "000.076889"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944243.8771,
+            "elapsed_time_s": "000.115664"
+        }
+    },
+    "../2015/day-04/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731943538.500957,
+            "elapsed_time_s": "008.969123"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944246.668807,
+            "elapsed_time_s": "002.775978"
+        }
+    },
+    "../2015/day-05/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731937806.587072,
+            "elapsed_time_s": "000.096553"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944246.794179,
+            "elapsed_time_s": "000.115752"
+        }
+    },
+    "../2015/day-06/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731937807.23143,
+            "elapsed_time_s": "000.624191"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944271.220779,
+            "elapsed_time_s": "001.677446"
+        }
+    },
+    "../2015/day-07/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731937807.424595,
+            "elapsed_time_s": "000.176849"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944271.312884,
+            "elapsed_time_s": "000.081767"
+        }
+    },
+    "../2015/day-08/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731937807.514474,
+            "elapsed_time_s": "000.071929"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944271.424956,
+            "elapsed_time_s": "000.095654"
+        }
+    },
+    "../2015/day-09/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731937807.744742,
+            "elapsed_time_s": "000.213214"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944271.587131,
+            "elapsed_time_s": "000.148731"
+        }
+    },
+    "../2015/day-10/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731937811.23318,
+            "elapsed_time_s": "003.471018"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944783.222385,
+            "elapsed_time_s": "timeout"
+        }
+    },
+    "../2015/day-11/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731939638.100671,
+            "elapsed_time_s": "006.442683"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944867.386235,
+            "elapsed_time_s": "000.940808"
+        }
+    },
+    "../2015/day-12/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731939638.193503,
+            "elapsed_time_s": "000.077716"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944867.498614,
+            "elapsed_time_s": "000.104238"
+        }
+    },
+    "../2015/day-13/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731939639.868656,
+            "elapsed_time_s": "001.657184"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944868.438988,
+            "elapsed_time_s": "000.881363"
+        }
+    },
+    "../2015/day-14/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731939639.959684,
+            "elapsed_time_s": "000.076159"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944868.540135,
+            "elapsed_time_s": "000.091267"
+        }
+    },
+    "../2015/day-15/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731941938.295727,
+            "elapsed_time_s": "001.060007"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944868.911038,
+            "elapsed_time_s": "000.357842"
+        }
+    },
+    "../2015/day-16/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731939662.877414,
+            "elapsed_time_s": "000.070600"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944869.013386,
+            "elapsed_time_s": "000.087172"
+        }
+    },
+    "../2015/day-17/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731939663.132894,
+            "elapsed_time_s": "000.235741"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944869.189793,
+            "elapsed_time_s": "000.165386"
+        }
+    },
+    "../2015/day-18/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731939666.342935,
+            "elapsed_time_s": "003.191878"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944869.673206,
+            "elapsed_time_s": "000.470395"
+        }
+    },
+    "../2015/day-19/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731939666.436809,
+            "elapsed_time_s": "000.079111"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944869.761491,
+            "elapsed_time_s": "000.078862"
+        }
+    },
+    "../2015/day-20/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731940882.295552,
+            "elapsed_time_s": "005.902280"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944874.861545,
+            "elapsed_time_s": "005.086500"
+        }
+    },
+    "../2015/day-21/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731939724.670975,
+            "elapsed_time_s": "000.141213"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944875.031742,
+            "elapsed_time_s": "000.156981"
+        }
+    },
+    "../2015/day-22/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731939727.263297,
+            "elapsed_time_s": "002.565778"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944875.755849,
+            "elapsed_time_s": "000.710416"
+        }
+    },
+    "../2015/day-23/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731939727.351851,
+            "elapsed_time_s": "000.073034"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944875.843601,
+            "elapsed_time_s": "000.077490"
+        }
+    },
+    "../2015/day-24/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731939727.558475,
+            "elapsed_time_s": "000.182049"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944875.98511,
+            "elapsed_time_s": "000.126820"
+        }
+    },
+    "../2015/day-25/main.py": {
+        "python3 (3.12.7)": {
+            "exec_time": 1731939898.486389,
+            "elapsed_time_s": "001.851421"
+        },
+        "pypy3 (3.10.14 (7.3.17))": {
+            "exec_time": 1731944876.327141,
+            "elapsed_time_s": "000.328301"
+        }
+    },
+    "../2016/day-01/main.py": {},
+    "../2016/day-02/main.py": {},
+    "../2016/day-03/main.py": {},
+    "../2016/day-04/main.py": {},
+    "../2016/day-05/main.py": {},
+    "../2016/day-06/main.py": {},
+    "../2016/day-07/main.py": {},
+    "../2016/day-08/main.py": {},
+    "../2016/day-09/main.py": {},
+    "../2016/day-10/main.py": {},
+    "../2016/day-11/main.py": {},
+    "../2016/day-12/main.py": {},
+    "../2016/day-13/main.py": {},
+    "../2016/day-14/main.py": {},
+    "../2016/day-15/main.py": {},
+    "../2016/day-16/main.py": {},
+    "../2016/day-17/main.py": {},
+    "../2016/day-18/main.py": {},
+    "../2016/day-19/main.py": {},
+    "../2016/day-20/main.py": {},
+    "../2016/day-21/main.py": {},
+    "../2016/day-22/main.py": {},
+    "../2016/day-23/main.py": {},
+    "../2016/day-24/main.py": {},
+    "../2016/day-25/main.py": {},
+    "../2017/day-01/main.py": {},
+    "../2017/day-02/main.py": {},
+    "../2017/day-03/main.py": {},
+    "../2017/day-04/main.py": {},
+    "../2017/day-05/main.py": {},
+    "../2017/day-06/main.py": {},
+    "../2017/day-07/main.py": {},
+    "../2017/day-08/main.py": {},
+    "../2017/day-09/main.py": {},
+    "../2017/day-10/main.py": {},
+    "../2017/day-11/main.py": {},
+    "../2017/day-12/main.py": {},
+    "../2017/day-13/main.py": {},
+    "../2017/day-14/main.py": {},
+    "../2017/day-15/main.py": {},
+    "../2017/day-16/main.py": {},
+    "../2017/day-17/main.py": {},
+    "../2017/day-18/main.py": {},
+    "../2017/day-19/main.py": {},
+    "../2017/day-20/main.py": {},
+    "../2017/day-21/main.py": {},
+    "../2017/day-22/main.py": {},
+    "../2017/day-23/main.py": {},
+    "../2017/day-24/main.py": {},
+    "../2017/day-25/main.py": {},
+    "../2018/day-01/main.py": {},
+    "../2018/day-02/main.py": {},
+    "../2018/day-03/main.py": {},
+    "../2018/day-04/main.py": {},
+    "../2018/day-05/main.py": {},
+    "../2018/day-06/main.py": {},
+    "../2018/day-07/main.py": {},
+    "../2018/day-08/main.py": {},
+    "../2018/day-09/main.py": {},
+    "../2018/day-10/main.py": {},
+    "../2018/day-11/main.py": {},
+    "../2018/day-12/main.py": {},
+    "../2018/day-13/main.py": {},
+    "../2018/day-14/main.py": {},
+    "../2018/day-15/main.py": {},
+    "../2018/day-16/main.py": {},
+    "../2018/day-17/main.py": {},
+    "../2018/day-18/main.py": {},
+    "../2018/day-19/main.py": {},
+    "../2018/day-20/main.py": {},
+    "../2018/day-21/main.py": {},
+    "../2018/day-22/main.py": {},
+    "../2018/day-23/main.py": {},
+    "../2018/day-24/main.py": {},
+    "../2018/day-25/main.py": {},
+    "../2019/day-01/main.py": {},
+    "../2019/day-02/main.py": {},
+    "../2019/day-03/main.py": {},
+    "../2019/day-04/main.py": {},
+    "../2019/day-05/main.py": {},
+    "../2019/day-06/main.py": {},
+    "../2019/day-07/main.py": {},
+    "../2019/day-08/main.py": {},
+    "../2019/day-09/main.py": {},
+    "../2019/day-10/main.py": {},
+    "../2019/day-11/main.py": {},
+    "../2019/day-12/main.py": {},
+    "../2019/day-13/main.py": {},
+    "../2019/day-14/main.py": {},
+    "../2019/day-15/main.py": {},
+    "../2019/day-16/main.py": {},
+    "../2019/day-17/main.py": {},
+    "../2019/day-18/main.py": {},
+    "../2019/day-19/main.py": {},
+    "../2020/day-01/main.py": {},
+    "../2020/day-02/main.py": {},
+    "../2020/day-03/main.py": {},
+    "../2020/day-04/main.py": {},
+    "../2020/day-05/main.py": {},
+    "../2020/day-06/main.py": {},
+    "../2020/day-07/main.py": {},
+    "../2020/day-08/main.py": {},
+    "../2020/day-09/main.py": {},
+    "../2020/day-10/main.py": {},
+    "../2020/day-11/main.py": {},
+    "../2020/day-12/main.py": {},
+    "../2020/day-13/main.py": {},
+    "../2020/day-14/main.py": {},
+    "../2020/day-15/main.py": {},
+    "../2020/day-16/main.py": {},
+    "../2020/day-17/main.py": {},
+    "../2020/day-18/main.py": {},
+    "../2020/day-19/main.py": {},
+    "../2020/day-20/main.py": {},
+    "../2020/day-21/main.py": {},
+    "../2020/day-22/main.py": {},
+    "../2020/day-23/main.py": {},
+    "../2020/day-24/main.py": {},
+    "../2020/day-25/main.py": {},
+    "../2021/day-01/main.py": {},
+    "../2021/day-02/main.py": {},
+    "../2021/day-03/main.py": {},
+    "../2021/day-04/main.py": {},
+    "../2021/day-05/main.py": {},
+    "../2021/day-06/main.py": {},
+    "../2021/day-07/main.py": {},
+    "../2021/day-08/main.py": {},
+    "../2021/day-09/main.py": {},
+    "../2021/day-10/main.py": {},
+    "../2021/day-11/main.py": {},
+    "../2021/day-12/main.py": {},
+    "../2021/day-13/main.py": {},
+    "../2021/day-14/main.py": {},
+    "../2021/day-15/main.py": {},
+    "../2021/day-16/main.py": {},
+    "../2021/day-17/main.py": {},
+    "../2021/day-18/main.py": {},
+    "../2021/day-19/main.py": {},
+    "../2021/day-20/main.py": {},
+    "../2021/day-21/main.py": {},
+    "../2021/day-22/main.py": {},
+    "../2021/day-23/main.py": {},
+    "../2021/day-24/main.py": {},
+    "../2021/day-25/main.py": {},
+    "../2022/day-01/main.py": {},
+    "../2022/day-02/main.py": {},
+    "../2022/day-03/main.py": {},
+    "../2022/day-04/main.py": {},
+    "../2022/day-05/main.py": {},
+    "../2022/day-06/main.py": {},
+    "../2022/day-07/main.py": {},
+    "../2022/day-08/main.py": {},
+    "../2022/day-09/main.py": {},
+    "../2022/day-10/main.py": {},
+    "../2022/day-11/main.py": {},
+    "../2022/day-12/main.py": {},
+    "../2022/day-13/main.py": {},
+    "../2022/day-14/main.py": {},
+    "../2022/day-15/main.py": {},
+    "../2022/day-16/main.py": {},
+    "../2022/day-17/main.py": {},
+    "../2022/day-18/main.py": {},
+    "../2022/day-19/main.py": {},
+    "../2022/day-20/main.py": {},
+    "../2022/day-21/main.py": {},
+    "../2022/day-22/main.py": {},
+    "../2022/day-23/main.py": {},
+    "../2022/day-24/main.py": {},
+    "../2022/day-25/main.py": {},
+    "../2023/day-01/main.py": {},
+    "../2023/day-02/main.py": {},
+    "../2023/day-03/main.py": {},
+    "../2023/day-04/main.py": {},
+    "../2023/day-05/main.py": {},
+    "../2023/day-06/main.py": {},
+    "../2023/day-07/main.py": {},
+    "../2023/day-08/main.py": {},
+    "../2023/day-09/main.py": {},
+    "../2023/day-10/main.py": {},
+    "../2023/day-11/main.py": {},
+    "../2023/day-12/main.py": {},
+    "../2023/day-13/main.py": {},
+    "../2023/day-14/main.py": {},
+    "../2023/day-15/main.py": {},
+    "../2023/day-16/main.py": {},
+    "../2023/day-17/main.py": {},
+    "../2023/day-18/main.py": {},
+    "../2023/day-19/main.py": {},
+    "../2023/day-20/main.py": {},
+    "../2023/day-21/main.py": {},
+    "../2023/day-22/main.py": {},
+    "../2023/day-23/main.py": {},
+    "../2023/day-24/main.py": {},
+    "../2023/day-25/main.py": {}
+}

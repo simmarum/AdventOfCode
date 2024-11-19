@@ -201,6 +201,9 @@ The magnitude of this final sum is `4140`.
 
 Add up all of the snailfish numbers from the homework assignment in the order they appear. *What is the magnitude of the final sum?*
 
+
+Your puzzle answer was 3734.
+
 ## --- Part Two ---
 
 You notice a second question on the back of the homework assignment:
@@ -229,3 +232,5 @@ The largest magnitude of the sum of any two snailfish numbers in this list is `3
 
 *What is the largest magnitude of any sum of two different snailfish numbers from the homework assignment?*
 
+
+Your puzzle answer was 4837.

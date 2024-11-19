@@ -24,6 +24,9 @@ The first step is to determine which ingredients *can't possibly* contain any of
 
 Determine which ingredients cannot possibly contain any of the allergens in your list. *How many times do any of those ingredients appear?*
 
+
+Your puzzle answer was 2262.
+
 ## --- Part Two ---
 
 Now that you've isolated the inert ingredients, you should have enough information to figure out which ingredient contains which allergen.
@@ -42,3 +45,5 @@ Arrange the ingredients *alphabetically by their allergen* and separate them by 
 
 Time to stock your raft with supplies. *What is your canonical dangerous ingredient list?*
 
+
+Your puzzle answer was cxsvdm,glf,rsbxb,xbnmzr,txdmlzd,vlblq,mtnh,mptbpz.

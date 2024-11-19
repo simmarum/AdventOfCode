@@ -53,6 +53,9 @@ To initialize your ferry's docking program, you need the sum of all values left 
 
 Execute the initialization program. *What is the sum of all values left in memory after it completes?* (Do not truncate the sum to 36 bits.)
 
+
+Your puzzle answer was 17765746710228.
+
 ## --- Part Two ---
 
 For some reason, the sea port's computer system still can't communicate with your ferry's docking program. It must be using *version 2* of the decoder chip!
@@ -125,3 +128,5 @@ The entire 36-bit address space still begins initialized to the value 0 at every
 
 Execute the initialization program using an emulator for a version 2 decoder chip. *What is the sum of all values left in memory after it completes?*
 
+
+Your puzzle answer was 4401465949086.

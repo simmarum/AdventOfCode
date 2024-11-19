@@ -90,6 +90,9 @@ The portly man nervously strokes his white beard. It's time to get that hot choc
 
 *How many constellations are formed by the fixed points in spacetime?*
 
+
+Your puzzle answer was 377.
+
 ## --- Part Two ---
 
 A small glowing portal opens above the mug you prepared and just enough hot chocolate streams in to fill it. You suspect the reindeer has never encountered hot chocolate before, but seems to enjoy it anyway. You hope it works.

@@ -161,9 +161,14 @@ After 10 minutes, there are `37` wooded acres and `31` lumberyards.  Multiplying
 
 *What will the total resource value of the lumber collection area be after 10 minutes?*
 
+
+Your puzzle answer was 536370.
+
 ## --- Part Two ---
 
 This important natural resource will need to last for at least thousands of years.  Are the Elves collecting this lumber sustainably?
 
 *What will the total resource value of the lumber collection area be after 1000000000 minutes?*
 
+
+Your puzzle answer was 190512.

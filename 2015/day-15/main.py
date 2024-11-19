@@ -18,9 +18,14 @@ def part_1(inp):
             int(split_line[8][:-1])
         ])
     ings_inv = list(map(list, zip(*ings)))
-
-    all_combs = [x for x in itertools.permutations(
-        range(0, 101), len(ings)) if sum(x) == 100]
+    max_sum = 100
+    all_combs = []
+    for a in range(0, max_sum + 1):
+        for b in range(0, max_sum + 1 - a):
+            for c in range(0, max_sum + 1 - a - b):
+                for d in range(0, max_sum + 1 - a - b - c):
+                    if a + b + c + d == max_sum:
+                        all_combs.append((a, b, c, d))
     res = max([math.prod([max(0, sum([a * b for a, b in zip(one_comb, one_ing_inv)]))
                           for one_ing_inv in ings_inv]) for one_comb in all_combs])
     return res
@@ -38,13 +43,18 @@ def part_2(inp):
             int(split_line[10])
         ])
     ings_inv = list(map(list, zip(*ings)))
-    lings = len(ings)
-
-    all_combs = [x for x in itertools.permutations(
-        range(0, 101), lings) if sum(x) == 100]
+    max_cal = 500
+    max_sum = 100
+    all_combs = []
+    for a in range(0, max_sum + 1):
+        for b in range(0, max_sum + 1 - a):
+            for c in range(0, max_sum + 1 - a - b):
+                for d in range(0, max_sum + 1 - a - b - c):
+                    if a + b + c + d == max_sum:
+                        all_combs.append((a, b, c, d))
     res = max([math.prod([max(0, sum([a * b for a, b in zip(one_comb, one_ing_inv)]))
                           for one_ing_inv in ings_inv[:-1]]) for one_comb in all_combs
-               if sum([a * b for a, b in zip(one_comb, ings_inv[-1])]) == 500])
+               if sum([a * b for a, b in zip(one_comb, ings_inv[-1])]) == max_cal])
     return res
 
 

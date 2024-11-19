@@ -43,6 +43,9 @@ Therefore, a total of `6` programs are in this group; all but program `1`, which
 
 *How many programs* are in the group that contains program ID `0`?
 
+
+Your puzzle answer was 115.
+
 ## --- Part Two ---
 
 There are more programs than just the ones in the group containing program ID `0`. The rest of them have no way of reaching that group, and still might have no way of reaching each other.
@@ -53,3 +56,5 @@ In the example above, there were `2` groups: one consisting of programs `0,2,3,4
 
 *How many groups are there* in total?
 
+
+Your puzzle answer was 221.

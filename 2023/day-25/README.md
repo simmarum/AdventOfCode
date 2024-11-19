@@ -57,6 +57,9 @@ Multiplying the sizes of these groups together produces `54`.
 
 Find the three wires you need to disconnect in order to divide the components into two separate groups. *What do you get if you multiply the sizes of these two groups together?*
 
+
+Your puzzle answer was 532891.
+
 ## --- Part Two ---
 
 You climb over weather machines, under giant springs, and narrowly avoid a pile of pipes as you find and disconnect the three wires.

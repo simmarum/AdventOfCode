@@ -38,6 +38,9 @@ ZZZ = (ZZZ, ZZZ)
 
 Starting at `AAA`, follow the left/right instructions. *How many steps are required to reach `ZZZ`?*
 
+
+Your puzzle answer was 20659.
+
 ## --- Part Two ---
 
 The *sandstorm* is upon you and you aren't any closer to escaping the wasteland. You had the camel follow the instructions, but you've barely left your starting position. It's going to take *significantly more steps* to escape!
@@ -84,3 +87,5 @@ So, in this example, you end up entirely on nodes that end in `Z` after `6` step
 
 Simultaneously start on every node that ends with `A`. *How many steps does it take before you're only on nodes that end with `Z`?*
 
+
+Your puzzle answer was 15690466351717.

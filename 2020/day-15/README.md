@@ -60,6 +60,9 @@ Here are a few more examples:
 
 Given your starting numbers, *what will be the `2020`th number spoken?*
 
+
+Your puzzle answer was 536.
+
 ## --- Part Two ---
 
 Impressed, the Elves issue you a challenge: determine the `30000000`th number spoken. For example, given the same starting numbers as above:
@@ -82,3 +85,5 @@ Impressed, the Elves issue you a challenge: determine the `30000000`th number sp
 
 Given your starting numbers, *what will be the `30000000`th number spoken?*
 
+
+Your puzzle answer was 24065124.

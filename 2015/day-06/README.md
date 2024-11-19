@@ -20,6 +20,9 @@ For example:
 After following the instructions, *how many lights are lit*?
 
 
+
+Your puzzle answer was 543903.
+
 ## --- Part Two ---
 
 You just finish implementing your winning light pattern when you realize you mistranslated Santa's message from Ancient Nordic Elvish.
@@ -42,3 +45,5 @@ For example:
  - `toggle 0,0 through 999,999` would increase the total brightness by `2000000`.
 
 
+
+Your puzzle answer was 14687245.

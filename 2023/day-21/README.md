@@ -99,6 +99,9 @@ However, the Elf *actually needs to get `64` steps today*, and the map he's hand
 
 Starting from the garden plot marked `S` on your map, *how many garden plots could the Elf reach in exactly `64` steps?*
 
+
+Your puzzle answer was 3572.
+
 ## --- Part Two ---
 
 The Elf seems confused by your answer until he realizes his mistake: he was reading from a *list* of his favorite numbers that are both perfect squares and perfect cubes, not his step counter.
@@ -168,3 +171,5 @@ Here are the number of reachable garden plots in this new infinite version of th
 
 However, the step count the Elf needs is much larger! Starting from the garden plot marked `S` on your infinite map, *how many garden plots could the Elf reach in exactly `26501365` steps?*
 
+
+Your puzzle answer was 594606492802848.

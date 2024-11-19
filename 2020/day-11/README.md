@@ -112,6 +112,9 @@ At this point, something interesting happens: the chaos stabilizes and further a
 
 Simulate your seating area by applying the seating rules repeatedly until no seats change state. *How many seats end up occupied?*
 
+
+Your puzzle answer was 2183.
+
 ## --- Part Two ---
 
 As soon as people start to arrive, you realize your mistake. People don't just care about adjacent seats - they care about *the first seat they can see* in each of those eight directions!
@@ -259,3 +262,5 @@ Again, at this point, people stop shifting around and the seating area reaches e
 
 Given the new visibility method and the rule change for occupied seats becoming empty, once equilibrium is reached, *how many seats end up occupied?*
 
+
+Your puzzle answer was 1990.

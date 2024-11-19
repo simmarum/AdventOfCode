@@ -43,6 +43,9 @@ At this point, particle `1` will never be closer to `<0,0,0>` than particle `0`,
 
 *Which particle will stay closest to position `<0,0,0>`* in the long term?
 
+
+Your puzzle answer was 308.
+
 ## --- Part Two ---
 
 To simplify the problem further, the GPU would like to remove any particles that *collide*. Particles collide if their positions ever *exactly match*. Because particles are updated simultaneously, *more than two particles* can collide at the same time and place.  Once particles collide, they are removed and cannot collide with anything else after that tick.
@@ -76,3 +79,5 @@ In this example, particles `0`, `1`, and `2` are simultaneously destroyed at the
 
 *How many particles are left* after all collisions are resolved?
 
+
+Your puzzle answer was 504.

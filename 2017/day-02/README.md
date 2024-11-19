@@ -24,6 +24,9 @@ In this example, the spreadsheet's checksum would be `8 + 4 + 6 = 18`.
 
 *What is the checksum* for the spreadsheet in your puzzle input?
 
+
+Your puzzle answer was 45158.
+
 ## --- Part Two ---
 
 "Great work; looks like we're on the right track after all.  Here's a *star* for your effort." However, the program seems a little worried. Can programs *be* worried?
@@ -52,3 +55,5 @@ In this example, the sum of the results would be `4 + 3 + 2 = 9`.
 
 What is the *sum of each row's result* in your puzzle input?
 
+
+Your puzzle answer was 294.

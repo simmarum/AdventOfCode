@@ -76,6 +76,9 @@ In the cave system above, because the mouth is at `0,0` and the target is at `10
 
 *What is the total risk level for the smallest rectangle that includes `0,0` and the target's coordinates?*
 
+
+Your puzzle answer was 8681.
+
 ## --- Part Two ---
 
 Okay, it's time to go rescue the man's friend.
@@ -361,3 +364,5 @@ This is tied with other routes as the *fastest way to reach the target*: `45` mi
 
 *What is the fewest number of minutes you can take to reach the target?*
 
+
+Your puzzle answer was 1070.

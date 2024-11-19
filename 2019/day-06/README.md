@@ -67,6 +67,9 @@ The total number of direct and indirect orbits in this example is `42`.
 *What is the total number of direct and indirect orbits* in your map data?
 
 
+
+Your puzzle answer was 295936.
+
 ## --- Part Two ---
 
 Now, you just need to figure out how many *orbital transfers* you (`YOU`) need to take to get to Santa (`SAN`).
@@ -132,3 +135,5 @@ COM - B - C - D - E - F
 
 *What is the minimum number of orbital transfers required* to move from the object `YOU` are orbiting to the object `SAN` is orbiting? (Between the objects they are orbiting - *not* between `YOU` and `SAN`.)
 
+
+Your puzzle answer was 457.

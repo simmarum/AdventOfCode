@@ -44,6 +44,9 @@ In the above example, 10 tiles are flipped once (to black), and 5 more are flipp
 
 Go through the renovation crew's list and determine which tiles they need to flip. After all of the instructions have been followed, *how many tiles are left with the black side up?*
 
+
+Your puzzle answer was 528.
+
 ## --- Part Two ---
 
 The tile floor in the lobby is meant to be a *living art exhibit*. Every day, the tiles are all flipped according to the following rules:
@@ -88,3 +91,5 @@ After executing this process a total of 100 times, there would be *`2208`* black
 
 *How many tiles will be black after 100 days?*
 
+
+Your puzzle answer was 4200.

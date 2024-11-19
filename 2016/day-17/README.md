@@ -41,6 +41,9 @@ Passcodes actually used by Easter Bunny Vault Security do allow access to the va
 
 Given your vault's passcode, *what is the shortest path* (the actual path, not just the length) to reach the vault?
 
+
+Your puzzle answer was DUDDRLRRRD.
+
 ## --- Part Two ---
 
 You're curious how robust this security solution really is, and so you decide to find longer and longer paths which still provide access to the vault. You remember that paths always end the first time they reach the bottom-right room (that is, they can never pass through it, only end in it).
@@ -59,3 +62,5 @@ For example:
 
 What is the *length of the longest path* that reaches the vault?
 
+
+Your puzzle answer was 578.

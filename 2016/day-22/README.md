@@ -26,6 +26,9 @@ To do this, you'd like to count the number of *viable pairs* of nodes.  A viable
 
 *How many viable pairs* of nodes are there?
 
+
+Your puzzle answer was 1003.
+
 ## --- Part Two ---
 
 Now that you have a better understanding of the grid, it's time to get to work.
@@ -145,3 +148,5 @@ So, after `7` steps, we've accessed the data we want. Unfortunately, each of the
 
 *What is the fewest number of steps* required to move your goal data to `node-x0-y0`?
 
+
+Your puzzle answer was 192.

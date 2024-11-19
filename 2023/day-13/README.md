@@ -71,6 +71,9 @@ To *summarize* your pattern notes, add up *the number of columns* to the left of
 
 Find the line of reflection in each of the patterns in your notes. *What number do you get after summarizing all of your notes?*
 
+
+Your puzzle answer was 30705.
+
 ## --- Part Two ---
 
 You resume walking through the valley of mirrors and - *SMACK!* - run directly into one. Hopefully *nobody* was watching, because that must have been pretty embarrassing.
@@ -134,3 +137,5 @@ Summarize your notes as before, but instead use the new different reflection lin
 
 In each pattern, fix the smudge and find the different line of reflection. *What number do you get after summarizing the new reflection line in each pattern in your notes?*
 
+
+Your puzzle answer was 44615.

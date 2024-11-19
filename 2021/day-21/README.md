@@ -54,6 +54,9 @@ Since player 1 has at least `1000` points, player 1 wins and the game ends. At t
 
 Play a practice game using the deterministic 100-sided die. The moment either player wins, *what do you get if you multiply the score of the losing player by the number of times the die was rolled during the game?*
 
+
+Your puzzle answer was 752745.
+
 ## --- Part Two ---
 
 Now that you're warmed up, it's time to play the real game.
@@ -68,3 +71,5 @@ Using the same starting positions as in the example above, player 1 wins in `444
 
 Using your given starting positions, determine every possible outcome. *Find the player that wins in more universes; in how many universes does that player win?*
 
+
+Your puzzle answer was 309196008717909.

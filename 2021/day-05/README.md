@@ -50,6 +50,9 @@ To avoid the most dangerous areas, you need to determine *the number of points w
 
 Consider only horizontal and vertical lines. *At how many points do at least two lines overlap?*
 
+
+Your puzzle answer was 4745.
+
 ## --- Part Two ---
 
 Unfortunately, considering only horizontal and vertical lines doesn't give you the full picture; you need to also consider *diagonal lines*.
@@ -82,3 +85,5 @@ You still need to determine *the number of points where at least two lines overl
 
 Consider all of the lines. *At how many points do at least two lines overlap?*
 
+
+Your puzzle answer was 18442.

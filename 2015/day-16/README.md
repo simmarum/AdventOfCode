@@ -44,6 +44,9 @@ You make a list of the things you can remember about each Aunt Sue.  Things miss
 
 What is the *number* of the Sue that got you the gift?
 
+
+Your puzzle answer was 373.
+
 ## --- Part Two ---
 
 As you're about to send the thank you note, something in the MFCSAM's instructions catches your eye.  Apparently, it has an outdated [retroencabulator](https://www.youtube.com/watch?v=RXJKdh1KZ0w), and so the output from the machine isn't exact values - some of them indicate ranges.
@@ -52,3 +55,5 @@ In particular, the `cats` and `trees` readings indicates that there are *greater
 
 What is the *number* of the real Aunt Sue?
 
+
+Your puzzle answer was 260.

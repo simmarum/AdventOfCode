@@ -56,6 +56,9 @@ The rest of the electronics seem to place the keypad entry (the number of eggs, 
 
 *What value* should be sent to the safe?
 
+
+Your puzzle answer was 12748.
+
 ## --- Part Two ---
 
 The safe doesn't open, but it *does* make several *angry noises* to express its frustration.
@@ -66,3 +69,5 @@ As you run the program with this new input, the prototype computer begins to *ov
 
 Anyway, *what value* should actually be sent to the safe?
 
+
+Your puzzle answer was 479009308.

@@ -176,6 +176,9 @@ So, in the example above, counting both water at rest (`~`) and other sand tiles
 
 *How many tiles can the water reach* within the range of `y` values in your scan?
 
+
+Your puzzle answer was 31949.
+
 ## --- Part Two ---
 
 After *a very long time*, the water spring will run dry. How much water will be retained?
@@ -184,3 +187,5 @@ In the example above, water that won't eventually drain out is shown as `~`, a t
 
 *How many water tiles are left* after the water spring stops producing water and all remaining water not at rest has drained?
 
+
+Your puzzle answer was 26384.

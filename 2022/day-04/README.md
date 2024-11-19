@@ -53,6 +53,9 @@ Some of the pairs have noticed that one of their assignments *fully contains* th
 
 *In how many assignment pairs does one range fully contain the other?*
 
+
+Your puzzle answer was 530.
+
 ## --- Part Two ---
 
 It seems like there is still quite a bit of duplicate work planned. Instead, the Elves would *like* to know the number of pairs that *overlap at all*.
@@ -73,3 +76,5 @@ So, in this example, the number of overlapping assignment pairs is `4`.
 
 *In how many assignment pairs do the ranges overlap?*
 
+
+Your puzzle answer was 903.

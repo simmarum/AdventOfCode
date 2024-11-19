@@ -34,6 +34,9 @@ Of these, although `10 9 1` has the smallest quantum entanglement (`90`), the co
 
 What is the *quantum entanglement* of the first group of packages in the ideal configuration?
 
+
+Your puzzle answer was 10723906903.
+
 ## --- Part Two ---
 
 That's weird... the sleigh still isn't balancing.
@@ -59,3 +62,5 @@ Of these, there are three arrangements that put the minimum (two) number of pack
 
 Now, what is the *quantum entanglement* of the first group of packages in the ideal configuration?
 
+
+Your puzzle answer was 74850409.

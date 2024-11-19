@@ -18,6 +18,9 @@ For example:
 
 *How many IPs* in your puzzle input support TLS?
 
+
+Your puzzle answer was 110.
+
 ## --- Part Two ---
 
 You would also like to know which IPs support *SSL* (super-secret listening).
@@ -38,3 +41,5 @@ For example:
 
 *How many IPs* in your puzzle input support SSL?
 
+
+Your puzzle answer was 242.

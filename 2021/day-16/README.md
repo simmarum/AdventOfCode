@@ -134,6 +134,9 @@ Here are a few more examples of hexadecimal-encoded transmissions:
 
 Decode the structure of your hexadecimal-encoded BITS transmission; *what do you get if you add up the version numbers in all packets?*
 
+
+Your puzzle answer was 852.
+
 ## --- Part Two ---
 
 Now that you have the structure of your transmission decoded, you can calculate the value of the expression it represents.
@@ -180,3 +183,5 @@ For example:
 
 *What do you get if you evaluate the expression represented by your hexadecimal-encoded BITS transmission?*
 
+
+Your puzzle answer was 19348959966392.

@@ -78,6 +78,9 @@ Because the digits `1`, `4`, `7`, and `8` each use a unique number of segments, 
 
 *In the output values, how many times do digits `1`, `4`, `7`, or `8` appear?*
 
+
+Your puzzle answer was 488.
+
 ## --- Part Two ---
 
 Through a little deduction, you should now be able to determine the remaining digits. Consider again the first example above:
@@ -166,3 +169,5 @@ Adding all of the output values in this larger example produces `61229`.
 
 For each entry, determine all of the wire/segment connections and decode the four-digit output values. *What do you get if you add up all of the output values?*
 
+
+Your puzzle answer was 1040429.

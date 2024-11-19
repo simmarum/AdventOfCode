@@ -34,7 +34,12 @@ In the end, output bin `0` contains a value-`5` microchip, output bin `1` contai
 
 Based on your instructions, *what is the number of the bot* that is responsible for comparing value-`61` microchips with value-`17` microchips?
 
+
+Your puzzle answer was 113.
+
 ## --- Part Two ---
 
 *What do you get* if you *multiply together the values* of one chip in each of outputs `0`, `1`, and `2`?
 
+
+Your puzzle answer was 12803.

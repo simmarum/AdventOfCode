@@ -53,6 +53,9 @@ At the end of these instructions, the ship's [Manhattan distance](https://en.wik
 
 Figure out where the navigation instructions lead. *What is the Manhattan distance between that location and the ship's starting position?*
 
+
+Your puzzle answer was 1533.
+
 ## --- Part Two ---
 
 Before you can give the destination to the captain, you realize that the actual action meanings were printed on the back of the instructions the whole time.
@@ -95,3 +98,5 @@ After these operations, the ship's Manhattan distance from its starting position
 
 Figure out where the navigation instructions actually lead. *What is the Manhattan distance between that location and the ship's starting position?*
 
+
+Your puzzle answer was 25235.

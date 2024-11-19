@@ -60,6 +60,9 @@ Now, the lagoon can contain a much more respectable `62` cubic meters of lava. W
 
 The Elves are concerned the lagoon won't be large enough; if they follow their dig plan, *how many cubic meters of lava could it hold?*
 
+
+Your puzzle answer was 49897.
+
 ## --- Part Two ---
 
 The Elves were right to be concerned; the planned lagoon would be *much too small*.
@@ -104,3 +107,5 @@ Digging out this loop and its interior produces a lagoon that can hold an impres
 
 Convert the hexadecimal color codes into the correct instructions; if the Elves follow this new dig plan, *how many cubic meters of lava could the lagoon hold?*
 
+
+Your puzzle answer was 194033958221830.

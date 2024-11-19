@@ -263,6 +263,9 @@ Minute 18, move down:
 
 *What is the fewest number of minutes required to avoid the blizzards and reach the goal?*
 
+
+Your puzzle answer was 290.
+
 ## --- Part Two ---
 
 As the expedition reaches the far side of the valley, one of the Elves looks especially dismayed:
@@ -275,3 +278,5 @@ In the above example, the first trip to the goal takes `18` minutes, the trip ba
 
 *What is the fewest number of minutes required to reach the goal, go back to the start, then reach the goal again?*
 
+
+Your puzzle answer was 842.

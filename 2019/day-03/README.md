@@ -50,6 +50,9 @@ Here are a few more examples:
 
 *What is the Manhattan distance* from the central port to the closest intersection?
 
+
+Your puzzle answer was 266.
+
 ## --- Part Two ---
 
 It turns out that this circuit is very timing-sensitive; you actually need to *minimize the signal delay*.
@@ -86,3 +89,5 @@ Here are the best steps for the extra examples from above:
 
 *What is the fewest combined steps the wires must take to reach an intersection?*
 
+
+Your puzzle answer was 19242.

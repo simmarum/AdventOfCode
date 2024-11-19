@@ -6,19 +6,21 @@ def read_file() -> list:
         return [str(line) for line in f.readlines()]
 
 
-def _divisors(n):
-    for i in range(1, int(math.sqrt(n) + 1)):
-        if n % i == 0:
-            yield int(i)
-            if i * i != n:
-                yield int(n / i)
+def sieve(max_n):
+    sieve_arr = [[] for _ in range(max_n + 1)]
+    for i in range(1, max_n):
+        for j in range(i, max_n, i):
+            sieve_arr[j].append(i)
+    return sieve_arr
 
 
 def part_1(inp):
     presents_target = int(inp[0])
     good_house = 0
-    for i in range(1_000_000):
-        presents = sum(_divisors(i)) * 10
+    max_n = 1_000_000
+    sieve_arr = sieve(max_n)
+    for i in range(1, max_n + 1):
+        presents = sum(sieve_arr[i]) * 10
         # print(f'House {i} got {presents} presents.')
         if presents >= presents_target:
             # print(f'House {i} got {presents} presents.')
@@ -28,21 +30,22 @@ def part_1(inp):
     return good_house
 
 
-def _divisors_2(n):
-    for i in range(1, int(math.sqrt(n) + 1)):
-        if n % i == 0:
-            if i * 50 > n:
-                yield int(i)
-            if i * i != n:
-                if int(n / i) * 50 > n:
-                    yield int(n / i)
+def sieve_2(max_n):
+    sieve_arr = [[] for _ in range(max_n + 1)]
+    for i in range(1, max_n):
+        for j in range(i, max_n, i):
+            if i * 50 > j:
+                sieve_arr[j].append(i)
+    return sieve_arr
 
 
 def part_2(inp):
     presents_target = int(inp[0])
     good_house = 0
-    for i in range(1_000_000):
-        presents = sum(_divisors_2(i)) * 11
+    max_n = 1_000_000
+    sieve_arr = sieve_2(max_n)
+    for i in range(1, max_n + 1):
+        presents = sum(sieve_arr[i]) * 11
         # print(f'House {i} got {presents} presents.')
         if presents >= presents_target:
             # print(f'House {i} got {presents} presents.')

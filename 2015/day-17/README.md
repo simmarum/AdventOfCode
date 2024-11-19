@@ -16,6 +16,9 @@ For example, suppose you have containers of size `20`, `15`, `10`, `5`, and `5` 
 
 Filling all containers entirely, how many different *combinations of containers* can exactly fit all `150` liters of eggnog?
 
+
+Your puzzle answer was 4372.
+
 ## --- Part Two ---
 
 While playing with all the containers in the kitchen, another load of eggnog *arrives*!  The shipping and receiving department is requesting as many containers as you can spare.
@@ -26,3 +29,5 @@ In the example above, the minimum number of containers was two.  There were thre
 
 
 
+
+Your puzzle answer was 4.

@@ -46,6 +46,9 @@ Here are a few more examples:
 
 Before you can help with the homework, you need to understand it yourself. *Evaluate the expression on each line of the homework; what is the sum of the resulting values?*
 
+
+Your puzzle answer was 654686398176.
+
 ## --- Part Two ---
 
 You manage to answer the child's questions and they finish part 1 of their homework, but get stuck when they reach the next section: *advanced* math.
@@ -80,3 +83,5 @@ Here are the other examples from above:
 
 *What do you get if you add up the results of evaluating the homework problems using these new rules?*
 
+
+Your puzzle answer was 8952864356993.

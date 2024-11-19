@@ -105,6 +105,9 @@ Reversing the process, you can determine that for the decimal number `4890`, the
 
 The Elves are starting to get cold. *What SNAFU number do you supply to Bob's console?*
 
+
+Your puzzle answer was 2=10---0===-1--01-20.
+
 ## --- Part Two ---
 
 The *hot air balloons* quickly carry you to the North Pole. As soon as you land, most of the expedition is escorted directly to a small building attached to the reindeer stables.

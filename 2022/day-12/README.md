@@ -36,6 +36,9 @@ This path reaches the goal in `31` steps, the fewest possible.
 
 *What is the fewest steps required to move from your current position to the location that should get the best signal?*
 
+
+Your puzzle answer was 361.
+
 ## --- Part Two ---
 
 As you walk up the hill, you suspect that the Elves will want to turn this into a hiking trail. The beginning isn't very scenic, though; perhaps you can find a better starting point.
@@ -68,3 +71,5 @@ This path reaches the goal in only `29` steps, the fewest possible.
 
 *What is the fewest steps required to move starting from any square with elevation `a` to the location that should get the best signal?*
 
+
+Your puzzle answer was 354.

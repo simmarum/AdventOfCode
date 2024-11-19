@@ -39,6 +39,9 @@ So, in this example, the bathroom code is `1985`.
 
 Your puzzle input is the instructions from the document you found at the front desk. What is the *bathroom code*?
 
+
+Your puzzle answer was 18843.
+
 ## --- Part Two ---
 
 You finally arrive at the bathroom (it's a several minute walk from the lobby so visitors can behold the many fancy conference rooms and water coolers on this floor) and go to punch in the code.  Much to your bladder's dismay, the keypad is not at all like you imagined it.  Instead, you are confronted with the result of hundreds of man-hours of *bathroom-keypad-design meetings:*
@@ -68,3 +71,5 @@ So, given the actual keypad layout, the code would be `5DB3`.
 
 Using the same instructions in your puzzle input, what is the correct *bathroom code*?
 
+
+Your puzzle answer was 67BB9.

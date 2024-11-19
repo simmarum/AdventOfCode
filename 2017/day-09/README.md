@@ -70,6 +70,9 @@ Your goal is to find the total score for all groups in your input. Each group is
 
 *What is the total score* for all groups in your input?
 
+
+Your puzzle answer was 21037.
+
 ## --- Part Two ---
 
 Now, you're ready to remove the garbage.
@@ -94,3 +97,5 @@ To prove you've removed it, you need to count all of the characters within the g
 
 *How many non-canceled characters are within the garbage* in your puzzle input?
 
+
+Your puzzle answer was 9495.

@@ -177,6 +177,9 @@ In this example, the location of the first crash is `7,3`.
 
 
 
+
+Your puzzle answer was 43,111.
+
 ## --- Part Two ---
 
 There isn't much you can do to prevent crashes in this ridiculous system. However, by predicting the crashes, the Elves know where to be in advance and *instantly remove the two crashing carts* the moment any crash occurs.
@@ -224,3 +227,5 @@ After four very expensive crashes, a tick ends with only one cart remaining; its
 
 *What is the location of the last cart* at the end of the first tick where it is the only cart left?
 
+
+Your puzzle answer was 44,56.

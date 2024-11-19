@@ -20,6 +20,9 @@ You will not *encounter* any strings containing numbers.
 
 What is the *sum of all numbers* in the document?
 
+
+Your puzzle answer was 191164.
+
 ## --- Part Two ---
 
 Uh oh - the Accounting-Elves have realized that they double-counted everything *red*.
@@ -36,3 +39,5 @@ Ignore any object (and all of its children) which has any property with the valu
  - `[1,"red",5]` has a sum of `6`, because `"red"` in an array has no effect.
 
 
+
+Your puzzle answer was 87842.

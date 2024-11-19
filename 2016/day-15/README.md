@@ -26,6 +26,9 @@ If, however, you wait until `time=5` to push the button, then when the capsule r
 
 However, your situation has more than two discs; you've noted their positions in your puzzle input. What is the *first time you can press the button* to get a capsule?
 
+
+Your puzzle answer was 317371.
+
 ## --- Part Two ---
 
 After getting the first capsule (it contained a star! what great fortune!), the machine detects your success and begins to rearrange itself.
@@ -34,3 +37,5 @@ When it's done, the discs are back in their original configuration as if it were
 
 With this new disc, and counting again starting from `time=0` with the configuration in your puzzle input, what is the *first time you can press the button* to get another capsule?
 
+
+Your puzzle answer was 2080951.

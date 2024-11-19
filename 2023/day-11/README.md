@@ -114,6 +114,9 @@ In this example, after expanding the universe, the sum of the shortest path betw
 
 Expand the universe, then find the length of the shortest path between every pair of galaxies. *What is the sum of these lengths?*
 
+
+Your puzzle answer was 10292708.
+
 ## --- Part Two ---
 
 The galaxies are much *older* (and thus much *farther apart*) than the researcher initially estimated.
@@ -124,3 +127,5 @@ Now, instead of the expansion you did before, make each empty row or column **on
 
 Starting with the same initial image, expand the universe according to these new rules, then find the length of the shortest path between every pair of galaxies. *What is the sum of these lengths?*
 
+
+Your puzzle answer was 790194712336.

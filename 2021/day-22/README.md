@@ -172,6 +172,9 @@ The last two steps are fully outside the initialization procedure area; all othe
 
 Execute the reboot steps. Afterward, considering only cubes in the region `x=-50..50,y=-50..50,z=-50..50`, *how many cubes are on?*
 
+
+Your puzzle answer was 647076.
+
 ## --- Part Two ---
 
 Now that the initialization procedure is complete, you can reboot the reactor.
@@ -248,3 +251,5 @@ After running the above reboot steps, `2758514936282235` cubes are *on*. (Just f
 
 Starting again with all cubes *off*, execute all reboot steps. Afterward, considering all cubes, *how many cubes are on?*
 
+
+Your puzzle answer was 1233304599156793.
