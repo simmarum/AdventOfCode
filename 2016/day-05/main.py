@@ -1,4 +1,4 @@
-import hashlib
+import _md5
 
 
 def read_file() -> list:
@@ -10,7 +10,7 @@ def part_1(inp):
     key = inp[0]
     password = ''
     for i in range(10_000_000):
-        h = hashlib.md5((key + str(i)).encode()).hexdigest()
+        h = _md5.md5((key + str(i)).encode()).hexdigest()
         if h[0:5] == '00000':
             password += h[5]
             # print(password, i)
@@ -26,7 +26,7 @@ def part_2(inp):
     key = inp[0]
     password = '________'
     for i in range(30_000_000):
-        h = hashlib.md5((key + str(i)).encode()).hexdigest()
+        h = _md5.md5((key + str(i)).encode()).hexdigest()
         if h[0:5] == '00000':
             if h[5] in '01234567':
                 if password[int(h[5])] == '_':

@@ -11,41 +11,36 @@ from tabulate import tabulate
 def create_markdown_from_json(json_object):
     headers = [
         'Year',
-        'Day',
-        'Interpreter name',
-        'Elapsed time [s]',
-        'Check execution time']
+        'Day'
+    ]
     table = []
+    interpreters = list(sorted({c_name for path_value in json_object.values()
+                               for c_name in path_value.keys()}))
+    headers.extend(interpreters)
+    headers.append(f"{headers[2]} vs {headers[3]}")
+    headers.append(f"{headers[3]} vs {headers[2]}")
     for path_name, path_value in json_object.items():
         _, year, day, _ = str(path_name).split("/")
         year = int(year)
         day = int(day[4:])
-        r_name = None
-        r_elapsed_time_s = None
-        r_exec_time = None
+        row = [
+            year,
+            day,
+            None,
+            None,
+            None,
+            None
+        ]
         if path_value:
             for c_name, c_value in path_value.items():
-                r_name = c_name
-                r_elapsed_time_s = c_value['elapsed_time_s']
-                r_exec_time = datetime.datetime.fromtimestamp(
-                    c_value['exec_time'])
-                row = [
-                    year,
-                    day,
-                    r_name,
-                    r_elapsed_time_s,
-                    r_exec_time
-                ]
-                table.append(row)
-        else:
-            row = [
-                year,
-                day,
-                r_name,
-                r_elapsed_time_s,
-                r_exec_time
-            ]
-            table.append(row)
+                row[headers.index(c_name)] = c_value['elapsed_time_s']
+        r_time_2 = float(row[2]) if row[2] and '>' not in row[2] else None
+        r_time_3 = float(row[3]) if row[3] and '>' not in row[3] else None
+
+        if r_time_2 and r_time_3:
+            row[-2] = r_time_3 / r_time_2 * 100
+            row[-1] = r_time_2 / r_time_3 * 100
+        table.append(row)
     table = list(sorted(table))
     with open("README.md", "w") as f:
         f.write(tabulate(table, headers, tablefmt="github", floatfmt="010.6f"))
@@ -54,7 +49,7 @@ def create_markdown_from_json(json_object):
 def find_all_mains():
     mains = {}
     working_dir = Path()
-    for path in working_dir.glob(f"../2*/**/main.py"):
+    for path in working_dir.glob("../2*/**/main.py"):
         mains[str(path)] = {}
     return dict(sorted(mains.items()))
 
@@ -115,8 +110,7 @@ def run_one_day(mains, m, year, day, readme_answers, min_time_from_last_run,
     tmp_compare_time_epoch = (
         datetime.datetime.now() -
         min_time_from_last_run).timestamp()
-    tmp_compare_time = datetime.datetime.fromtimestamp(
-        tmp_compare_time_epoch)
+    # tmp_compare_time = datetime.datetime.fromtimestamp(tmp_compare_time_epoch)
     if tmp_exec_time_epoch > tmp_compare_time_epoch:
         print(f"\t{interpreter_name_version} - Will skip {year=} {day=} (last refresh was: {tmp_exec_time})")  # noqa
         return False
@@ -146,7 +140,7 @@ def run_one_day(mains, m, year, day, readme_answers, min_time_from_last_run,
                     print(f"\t\tAnswer for part {i + 1} matching: {process_answers[i]}")  # noqa
                 else:
                     print(f"\t\tAnswer for part {i + 1} DOES NOT matching: {process_answers[i]=} {readme_answers[i]=}")  # noqa
-            except IndexError as e:
+            except IndexError:
                 print(f"\t\tNo answer for part {i + 1}? ({process_answers[i]=})")  # noqa
         mains[m][interpreter_name_version] = {
             'exec_time': datetime.datetime.now().timestamp(),
@@ -161,7 +155,7 @@ def run_one_day(mains, m, year, day, readme_answers, min_time_from_last_run,
             f"\tCommand timeout after {timeout} seconds: \n{e.stdout=}\n{e.stderr=}")  # noqa
         mains[m][interpreter_name_version] = {
             'exec_time': datetime.datetime.now().timestamp(),
-            'elapsed_time_s': f'>{timeout}s',
+            'elapsed_time_s': f'>{timeout}',
         }
     if p:
         print(
@@ -172,6 +166,7 @@ def run_one_day(mains, m, year, day, readme_answers, min_time_from_last_run,
 
 
 def main():
+    how_many_files = 50
     mains = find_all_mains()
     runtimes_log = read_log_file()
     mains.update(runtimes_log)
@@ -181,7 +176,7 @@ def main():
     pypy3_version = get_pypy_3_version()
     pypy3_version = f'pypy3 ({pypy3_version})'
     min_time_from_last_run = datetime.timedelta(minutes=60 * 24 * 31 * 365)
-    for m in list(mains.keys())[:25]:
+    for m in list(mains.keys())[:how_many_files]:
         print(f"Processing file: {m}")
         readme_answers = get_answer_from_readme(m)
         _, year, day, _ = m.split("/")
@@ -197,7 +192,7 @@ def main():
             min_time_from_last_run=min_time_from_last_run,
             interpreter_name_version=python_3_version,
             interpreter_command="python3",
-            timeout=30
+            timeout=60
         )
         # Pypy 3
         run_one_day(
@@ -209,8 +204,10 @@ def main():
             min_time_from_last_run=min_time_from_last_run,
             interpreter_name_version=pypy3_version,
             interpreter_command="pypy3",
-            timeout=15
+            timeout=60
         )
+    create_markdown_from_json(mains)
+    save_log_file(mains)
 
 
 if __name__ == '__main__':

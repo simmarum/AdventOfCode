@@ -42,7 +42,7 @@ def part_1(inp):
     start_node = (0, 0)
     end_node = (3, 3)
     salt = inp[0]
-    salt = 'ihgpwlah'  # DDRRRD
+    # salt = 'ihgpwlah'  # DDRRRD
     # salt = 'kglvqrro'  # DDUDRLRRUDRD
     # salt = 'ulqzkmiv'  # DRURDRUDDLLDLUURRDULRLDUUDDDRR
     min_path, _ = adoor(start_node, end_node, salt)

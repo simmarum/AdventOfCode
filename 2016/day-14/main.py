@@ -1,4 +1,4 @@
-from hashlib import md5
+import _md5
 import re
 
 
@@ -8,10 +8,10 @@ def read_file() -> list:
 
 
 def get_hash(s, stretch_times):
-    hash = md5((s).encode()).hexdigest().lower()
+    hash = _md5.md5((s).encode()).hexdigest().lower()
     if stretch_times > 0:
         for _ in range(stretch_times):
-            hash = md5((hash).encode()).hexdigest().lower()
+            hash = _md5.md5((hash).encode()).hexdigest().lower()
     return hash
 
 
