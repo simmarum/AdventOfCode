@@ -166,7 +166,7 @@ def run_one_day(mains, m, year, day, readme_answers, min_time_from_last_run,
 
 
 def main():
-    how_many_files = 50
+    how_many_files = 75
     mains = find_all_mains()
     runtimes_log = read_log_file()
     mains.update(runtimes_log)
