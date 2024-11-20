@@ -17,7 +17,7 @@ Thanks to [juliamarc](https://github.com/juliamarc) for idea and [based code](ht
 
 <!-- AOC TILES BEGIN -->
 <h1 align="center">
-  Advent of Code - 436/450 ⭐
+  Advent of Code - 450/450 ⭐
 </h1>
 <h1 align="center">
   2023 - 50 ⭐
@@ -332,7 +332,7 @@ Thanks to [juliamarc](https://github.com/juliamarc) for idea and [based code](ht
   <img src=".aoc_tiles/tiles/2020/25.png" width="161px">
 </a>
 <h1 align="center">
-  2019 - 36 ⭐
+  2019 - 50 ⭐
 </h1>
 <a href="2019/day-01/main.py">
   <img src=".aoc_tiles/tiles/2019/01.png" width="161px">
@@ -387,6 +387,27 @@ Thanks to [juliamarc](https://github.com/juliamarc) for idea and [based code](ht
 </a>
 <a href="2019/day-18/main.py">
   <img src=".aoc_tiles/tiles/2019/18.png" width="161px">
+</a>
+<a href="2019/day-19/main.py">
+  <img src=".aoc_tiles/tiles/2019/19.png" width="161px">
+</a>
+<a href="2019/day-20/main.py">
+  <img src=".aoc_tiles/tiles/2019/20.png" width="161px">
+</a>
+<a href="2019/day-21/main.py">
+  <img src=".aoc_tiles/tiles/2019/21.png" width="161px">
+</a>
+<a href="2019/day-22/main.py">
+  <img src=".aoc_tiles/tiles/2019/22.png" width="161px">
+</a>
+<a href="2019/day-23/main.py">
+  <img src=".aoc_tiles/tiles/2019/23.png" width="161px">
+</a>
+<a href="2019/day-24/main.py">
+  <img src=".aoc_tiles/tiles/2019/24.png" width="161px">
+</a>
+<a href="2019/day-25/main.py">
+  <img src=".aoc_tiles/tiles/2019/25.png" width="161px">
 </a>
 <h1 align="center">
   2018 - 50 ⭐
