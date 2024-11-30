@@ -10,6 +10,7 @@ def find_all_readmes():
     working_dir = Path()
     for path in working_dir.glob(f"./2*/**/*.md"):
         readmes[path] = None
+    readmes = dict(sorted(readmes.items()))
     return readmes
 
 
